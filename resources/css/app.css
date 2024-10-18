@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "ProtestStrike";
+    src: url("/font/ProtestStrike-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PassionOne";
+    src: url("/font/PassionOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

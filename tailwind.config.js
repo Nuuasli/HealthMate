@@ -12,6 +12,10 @@ export default {
                 dark: "#0f172a",
                 secondary: "#64748b",
             },
+            fontFamily: {
+                protest : ['ProtestStrike', 'sans-serif' ],
+                passion : ['PassionOne', 'sans-serif' ],
+            },
         },
     },
     plugins: [],
