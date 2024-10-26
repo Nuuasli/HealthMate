@@ -11,80 +11,11 @@
 
 <body class="overflow-x-hidden">
     {{-- header section --}}
-    <header class="  font-mono">
-        <nav class=" my-4 w-[85%] mx-auto flex">
-            <div class="container mx-auto flex items-center justify-center  relative">
-                <!-- Left Links (About, Service) -->
-                <div class="flex">
-                    <a href="#about"
-                        class="text-dark tracking-widest  text-md font-semibold relative p-4 
-                    hover:text-primary before:absolute before:bottom-2 before:left-0 
-                    before:w-full before:h-[2px] before:bg-primary before:scale-x-0 
-                    before:origin-center hover:before:scale-x-100 before:transition 
-                    before:duration-300">
-                        ABOUT
-                    </a>
-                    <div class="flex group ">
-                        <a href="#services"
-                            class="text-dark tracking-widest text-md font-semibold relative p-4 
-                            hover:text-primary before:absolute before:bottom-1 before:left-0 
-                            before:w-full before:h-[2px] before:bg-primary before:scale-x-0 
-                            before:origin-center hover:before:scale-x-100 before:transition 
-                            before:duration-300">
-                            SERVICES
-                        </a>
-
-                        <!-- Dropdown Menu -->
-                        <div
-                            class="absolute top-14 left-56 hidden group-hover:block bg-black text-white border-collapse mt-4 shadow-lg z-10 w-64">
-                            <a href="#service1"
-                                class="block font-medium px-4 py-2 tracking-widest hover:bg-primary border-b-2 border-white">Classes
-                                and
-                                Schedule</a>
-                            <a href="#service2"
-                                class="block font-medium px-4 py-2 tracking-widest hover:bg-primary border-b-2 border-white">Personal
-                                Trainer</a>
-                            <a href="#service3"
-                                class="block font-medium px-4 py-2 tracking-widest hover:bg-primary border-b-2 border-white">Nutrition</a>
-                            <a href="#service3"
-                                class="block font-medium px-4 py-2 tracking-widest hover:bg-primary border-b-2 border-white">24/7
-                                GYM</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Logo (Centered) -->
-                <div class="flex justify-center px-4 py-1">
-                    <a href="#" class="text-white text-2xl font-bold"><img class="w-full h-24"
-                            src="img/healthmate.png" alt="Logo"></a>
-                </div>
-
-                <!-- Right Links (Membership, Contact) -->
-                <div class="flex mr-46">
-                    <a href="#"
-                        class="text-dark tracking-widest text-md font-semibold relative p-4 
-                    hover:text-primary before:absolute before:bottom-2 before:left-0 
-                    before:w-full before:h-[2px] before:bg-primary before:scale-x-0 
-                    before:origin-center hover:before:scale-x-100 before:transition 
-                    before:duration-300">MEMBERSHIP</a>
-                    <a href="#contact"
-                        class="text-dark tracking-widest text-md font-semibold relative p-4 
-                    hover:text-primary before:absolute before:bottom-2 before:left-0 
-                    before:w-full before:h-[2px] before:bg-primary before:scale-x-0 
-                    before:origin-center hover:before:scale-x-100 before:transition 
-                    before:duration-300 ">CONTACT</a>
-                </div>
-            </div>
-            <div
-                class="absolute right-16 top-12  button w-[115px] border-2 border-primary rounded-sm bg-primary hover:bg-white  focus:ring-1-primary">
-                <a href="#" class="flex px-6 py-1 justify-center text-white hover:text-primary ">SIGN UP</a>
-            </div>
-        </nav>
-    </header>
+    <x-Navbar></x-Navbar>
     {{-- header section end --}}
 
     {{-- banner section --}}
-    <section>
+    <section id="banner">
         <div class="w-full shadow-lg flex font-mono h-[700px] ">
             <div class="relative banner w-full h-full ">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -100,7 +31,7 @@
                         class="inline-block bg-white rounded-r-lg backdrop-blur-sm font-protest font-bold text-[40px]  text-primary px-4">
                         DENGAN 24-JAM </h1>
                     <h1
-                        class="inline-block bg-white backdrop-blur-sm font-protest font-bold text-[40px]  text-primary px-4">
+                        class="inline-block bg-white  backdrop-blur-sm font-protest font-bold text-[40px]  text-primary px-4">
                         AKSES MASUK </h1>
                     <h1
                         class="inline-block bg-white rounded-r-lg backdrop-blur-sm font-protest font-bold text-[40px]  text-primary px-4">
@@ -120,7 +51,7 @@
                 </div>
                 <div class="w-full absolute top-[450px] -z-10">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                        <path fill="#000" fill-opacity="1"
+                        <path fill="#020202" fill-opacity="1"
                             d="M0,62L480,210L860,256L1440,120L1440,320L960,320L480,320L0,320Z"></path>
                     </svg>
 
@@ -129,12 +60,12 @@
         </div>
     </section>
 
-    <section class="relative bg-slate-100">
+    <section id="about" class="relative bg-slate-100">
         <div class="absolute -top-[210px] -right-4 ">
             <img src="img/5.png" alt="">
         </div>
         <div class="w-full px-4 ">
-            <div class="w-full relative container pt-20 pb-6 ">
+            <div class="w-full relative container pt-20 pb-6 mx-auto">
                 <div class="w-1/2 mx-auto">
                     <h1 class="text-center text-3xl font-bold text-primary font-passion italic tracking-wide ">
                         FUNGSIONAL. RAMAH. SETIAP HARI. SETIAP SAAT</h1>
@@ -160,8 +91,8 @@
         </div>
     </section>
 
-    <section class="pt-36">
-        <div class="container">
+    <section id="small-group" class="pt-36 w-full shadow-lg">
+        <div class="container mx-auto">
             <div class="w-full px-6 py-4">
                 <div class="flex flex-wrap">
                     <div class=" w-1/2 p-6">
@@ -180,12 +111,12 @@
                                 menawarkan dua
                                 kelas unggulan yang dirancang khusus untuk membantu kamu mencapai potensi terbaik dalam
                                 kebugaran!</p>
-                            <p class="p-2 font-light"><span class="uppercase font-bold text-primary">Kelas
+                            <p class="p-2 font-light"><span class="uppercase font-bold text-dark">Kelas
                                     Powerlifter</span>
                                 Ingin meningkatkan kekuatan otot dan mencapai performa maksimal? Kelas Powerlifter kami
                                 siap membimbingmu menguasai teknik angkat berat dengan aman dan efektif. Cocok untuk
                                 semua level, dari pemula hingga atlet yang ingin mengasah kekuatan.</p>
-                            <p class="p-2 font-light"><span class="uppercase font-bold text-primary">Kelas Kebugaran
+                            <p class="p-2 font-light"><span class="uppercase font-bold text-dark">Kelas Kebugaran
                                     Jasmani</span>
                                 Latihan menyeluruh untuk kebugaran tubuh! Kelas ini menggabungkan kardio, kekuatan, dan
                                 fleksibilitas dalam sesi yang dinamis dan menyenangkan. Cocok untuk meningkatkan
@@ -211,8 +142,175 @@
         </div>
     </section>
 
-    
+    <section id="personal-training" class="pt-36 bg-dark">
+        <div class="w-full">
+            <div class="px-6 mx-auto">
+                <div class="w-full px-6 py-4">
+                    <div class="flex flex-wrap">
+                        <div class="w-1/2 p-6 text-white mx-auto">
+                            <h1 class="text-3xl font-semibold font-Rowdies tracking-wider text-primary italic p-6">
+                                PERSONAL
+                                TRAINING</h1>
+                            <p class="px-6 py-4 font-normal ">
+                                <span class="font-bold">Ingin Hasil Maksimal? Bergabunglah dengan Personal Training di
+                                    HealthMate!</span>
+                                Dapatkan program latihan yang dirancang khusus untuk kebutuhan dan tujuan kebugaran Anda
+                                dengan bimbingan langsung dari pelatih profesional kami. Baik Anda ingin menurunkan
+                                berat badan, meningkatkan kekuatan, atau membentuk tubuh ideal, kami siap membantu Anda
+                                setiap langkahnya.
+                            </p>
+                            <p class="px-6 py-4 font-normal ">🔥 Manfaatkan sesi personal training untuk :
+                            <ul class="list-disc px-12">
+                                <li>Program latihan yang dipersonalisasi</li>
+                                <li>Panduan teknik yang benar agar terhindar dari cedera</li>
+                                <li>Motivasi ekstra dan dukungan terus-menerus</li>
+                            </ul>
+                            </p>
+
+                            <p class="px-6 py-4 font-semibold text-lg">Jangan lewatkan kesempatan untuk mencapai hasil
+                                terbaik
+                                dalam
+                                waktu lebih singkat!
+                                Jadwalkan sesi personal training Anda di HealthMate sekarang dan rasakan perubahan
+                                nyata.</p>
+
+                            <div
+                                class="button w-40 border-b-2 border-primary ml-5 mt-4 hover:border-2 hover:border-primary ">
+                                <a href="#"
+                                    class="flex px-3 py-3 justify-center text-white hover:text-primary ">Hubungi
+                                    Kami</a>
+                            </div>
+                        </div>
+                        <div class="w-1/2 p-6 text-white mx-auto relative ">
+                            <span class="absolute w-[450px] h-[560px] bg-primary -top-6 right-0 rounded-lg"></span>
+                            <img class="absolute w-[450px] rounded-lg right-10 mx-auto" src="img/7.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="member-option" class="pt-10 shadow-lg shadow-dark">
+        <div class="w-full">
+            <div class="w-full px-6 py-4 mx-auto ">
+                <h1 class="mx-auto text-center uppercase text-primary text-5xl font-Rowdies py-8">pilihan keanggotaan
+                </h1>
+                <p class="mx-auto text-center capitalize text-dark text-normal">pilihlah opsi latihan terbaik untuk
+                    anda dan target anda</p>
+                <div class="button w-32 border-2 border-primary mx-auto hover:border-2 hover:border-primary my-6">
+                    <a href="#"
+                        class="flex px-3 py-2 justify-center text-dark hover:text-primary capitalize ">lihat harga</a>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="w-1/2 p-2">
+                        <div class="p-6">
+                            <h1 class="uppercase text-primary font-semibold text-4xl py-4">member gym</h1>
+                            <p class="capitalize font-light text-md py-4">Dapatkan akses 24/7 ke gym kami dengan
+                                fasilitas
+                                canggih yang ramah hewan peliharaan dengan disediakan kamar mandi dan sauna untuk
+                                kebebasan
+                                anda latihan sendiri di waktu Anda sendiri.</p>
+                            <a href="" class="text-primary border-b-2 capitalize py-2 border-primary ">lihat
+                                lebih
+                                lanjut</a>
+                        </div>
+                        <div class="p-4">
+                            <h1 class="uppercase text-primary font-semibold text-4xl py-4">kebugaran & power lifter
+                            </h1>
+                            <p class="capitalize font-light text-md py-4">Dapatkan akses 24/7 ke gym kami ditambah
+                                kelas
+                                kebugaran dan kelompok kecil untuk fokus pada pengembangan dan penyempurnaan kekuatan
+                                dan
+                                daya tahan otot dan kardiovaskular.</p>
+                            <a href="" class="text-primary border-b-2 capitalize py-2 border-primary ">
+                                jadwalkan kelas pertama anda</a>
+                        </div>
+                    </div>
+                    <div class="w-1/2 p-2">
+                        <div class="p-6 relative">
+                            <img src="img/9.jpeg" alt=""
+                                class="w-full rounded-xl mt-16 shadow-lg shadow-secondary">
+                            <span
+                                class="bg-primary w-[550px] h-[360px] absolute rounded-xl top-16 right-0 -z-10 shadow-lg shadow-secondary"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fasilitas" class="pt-20 bg-slate-100">
+        <div class="w-full">
+            <div class="w-full px-6 py-4 mx-auto">
+                <div class="flex flex-wrap">
+                    <div class="w-1/2 p-2">
+                        <div class="p-6 relative">
+                            <img src="img/11.png" alt=""
+                                class="w-11/12 mt-10 ml-6 rounded-lg shadow-slate-600 shadow-lg">
+                            <img src="img/10.jpg" alt=""
+                                class="w-11/12 mt-10 ml-6 rounded-lg shadow-slate-600 shadow-lg">
+                            <img src="img/12.jpg" alt=""
+                                class="w-2/3 mt-10 shadow-slate-600 top-48 left-0 rounded-lg shadow-inner absolute">
+                        </div>
+                    </div>
+                    <div class="w-1/2 p-2">
+                        <div class="p-6 mx-auto">
+                            <h1 class="uppercase text-primary font-semibold text-4xl  text-center">fasilitas kami
+                            </h1>
+                            <h1 class="capitalize text-dark font-light text-md p-4 text-justify">HealthMate
+                                menghadirkan fasilitas gym yang nyaman dan modern, dirancang dengan ruang terbuka yang
+                                luas agar setiap anggota bisa berlatih dengan bebas. Gym ini menyediakan area latihan
+                                lengkap dengan peralatan terbaru, mulai dari alat kardio hingga mesin angkat beban yang
+                                canggih, mendukung segala kebutuhan kebugaran Anda.
+                            </h1>
+                            <div class="flex flex-wrap">
+                                <div class="w-1/2">
+                                    <ul class="list-disc px-12">
+                                        <li class="p-1">Treadmill</li>
+                                        <li class="p-1">Elliptical Trainer</li>
+                                        <li class="p-1">Stationary Bike</li>
+                                        <li class="p-1">Rowing Machine</li>
+                                        <li class="p-1">Lat Pulldown Machine</li>
+                                        <li class="p-1">Leg Press Machine</li>
+                                        <li class="p-1">Chest Press Machine</li>
+                                        <li class="p-1">Smith Machine</li>
+                                        <li class="p-1">Cable Machine</li>
+                                        <li class="p-1">Full set Dumbbells</li>
+                                        <li class="p-1">Barbells</li>
+                                        <li class="p-1">Kettlebells</li>
+
+
+                                    </ul>
+                                </div>
+                                <div class="w-1/2">
+                                    <ul class="list-disc px-12">
+                                        <li class="p-1">Weight Plates</li>
+                                        <li class="p-1">Adjustable Bench</li>
+                                        <li class="p-1">Pull-up Bar</li>
+                                        <li class="p-1">Battle Ropes</li>
+                                        <li class="p-1">Medicine Balls dan Slam Balls</li>
+                                        <li class="p-1">TRX Suspension Trainer</li>
+                                        <li class="p-1">Plyo Boxes</li>
+                                        <li class="p-1">Foam Rollers</li>
+                                        <li class="p-1">Stretching Mats</li>
+                                        <li class="p-1">Resistance Bands</li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
     {{-- banner section end --}}
+
+    {{-- footer start --}}
+    <x-Footer></x-Footer>
+    {{-- footer end --}}
 </body>
 
 </html>

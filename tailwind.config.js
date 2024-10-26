@@ -9,12 +9,13 @@ export default {
         extend: {
             colors: {
                 primary: "#76885B",
-                dark: "#0f172a",
+                dark: "#020202",
                 secondary: "#64748b",
             },
             fontFamily: {
-                protest : ['ProtestStrike', 'sans-serif' ],
-                passion : ['PassionOne', 'sans-serif' ],
+                protest: ["ProtestStrike", "sans-serif"],
+                passion: ["PassionOne", "sans-serif"],
+                Rowdies: ["Rowdies", "sans-serif"],
             },
         },
     },

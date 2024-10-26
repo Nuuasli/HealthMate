@@ -10,6 +10,3 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/per', function () {
-    return view('per');
-});

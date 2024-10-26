@@ -1,17 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Protest+Strike&family=Rowdies:wght@300;400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: "ProtestStrike";
-    src: url("/font/ProtestStrike-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
+@layer base {
+    @font-face {
+        font-family: "ProtestStrike";
+        src: url("/font/ProtestStrike-Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+    }
 
-@font-face {
-    font-family: "PassionOne";
-    src: url("/font/PassionOne-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+    @font-face {
+        font-family: "PassionOne";
+        src: url("font/PassionOne-Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+    }
 }
