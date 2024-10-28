@@ -3,7 +3,7 @@
         <!-- Left Section (Contact Info) -->
         <div class="w-full md:w-1/3 mb-8 md:mb-0">
             <img src="img/HealthMate.png" alt="HealthMate Logo" class="mb-4 w-4/6">
-            <p class="ml-10">Christmas Island <br>WA 6798, Australia</p>
+            <p class="ml-10">Brookfield,Illinois,<br> Amerika Serikat</p>
             <p class="mt-4 ml-10">(123) 345-6789</p>
             <a href="mailto:info@healthmate.com" class="hover:text-primary ml-10">info@healthmate.com</a>
         </div>
@@ -65,8 +65,8 @@
         </div>
 
         <div class="mx-auto">
-            <p>Site design by <a href="#" class="text-primary hover:underline">Tailwindcss</a> |
-                Built by <a href="#" class="text-primary hover:underline">HealthMate Group</a></p>
+            <p>Site design by <a href="https://tailwindcss.com/" class="text-primary hover:underline">Tailwindcss</a> |
+                Built by <a href="https://laravel.com/" class="text-primary hover:underline">Laravel</a></p>
         </div>
 
     </div>

@@ -1,5 +1,5 @@
-<header class="font-mono">
-    <nav class=" my-4 w-[85%] mx-auto flex">
+<header class="font-mono bg-white">
+    <nav class=" py-3 w-[85%] mx-auto flex ">
         <div class="container mx-auto flex items-center justify-center  relative">
             <!-- Left Links (About, Service) -->
             <div class="flex">
@@ -31,7 +31,7 @@
                         <a href="/trainer"
                             class="block font-medium px-4 py-2 tracking-widest hover:bg-primary border-b-2 border-white">Personal
                             Trainer</a>
-                        <a href="/GYM"
+                        <a href="/gym"
                             class="block font-medium px-4 py-2 tracking-widest hover:bg-primary border-b-2 border-white">24/7
                             GYM</a>
                     </div>

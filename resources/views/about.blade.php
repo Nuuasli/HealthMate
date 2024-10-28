@@ -25,7 +25,7 @@
                         d="M0,124L350,20L960,20L1440,162L1440,0L960,0L480,0L0,0Z"></path>
                 </svg>
                 <img src="img/banner-about.jpg" alt=""
-                    class="relative -top-[280px] brightness-75 -z-10 w-full ">
+                    class="relative -top-[280px] brightness-75 -z-10 w-full">
                 <div class="absolute w-2/5 px-4 py-4 top-44 left-16">
                     <h1
                         class="inline-block bg-white  rounded-tr-lg backdrop-blur-lg font-Rowdies font-bold text-[37px] uppercase  text-primary px-4">
@@ -172,7 +172,7 @@
         <p class="mx-auto text-center capitalize text-dark text-normal">pilihlah opsi latihan terbaik untuk
             anda dan target anda</p>
         <div class="button w-32 border-2 border-primary mx-auto hover:border-2 hover:border-primary my-6">
-            <a href="#" class="flex px-3 py-2 justify-center text-dark hover:text-primary capitalize ">lihat
+            <a href="/membership" class="flex px-3 py-2 justify-center text-dark hover:text-primary capitalize ">lihat
                 harga</a>
         </div>
     </section>
