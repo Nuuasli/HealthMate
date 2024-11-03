@@ -14,16 +14,16 @@
                 <img src="img/banner-about.jpg" alt="" class="relative -top-[280px] brightness-75 -z-10 w-full grayscale">
                 <div class="absolute w-2/5 px-4 py-4 top-44 left-16">
                     <h1
-                        class="inline-block bg-white  rounded-tr-lg backdrop-blur-lg font-Rowdies font-bold text-[37px] uppercase  text-primary px-4">
+                        class="inline-block rounded-tr-lg backdrop-blur-sm font-Rowdies font-bold text-[37px] uppercase  text-primary px-4">
                         Kebugaran </h1>
                     <h1
-                        class="inline-block bg-white  rounded-r-lg backdrop-blur-lg font-Rowdies font-bold text-[37px] uppercase  text-primary px-4">
+                        class="inline-block rounded-r-lg backdrop-blur-sm font-Rowdies font-bold text-[37px] uppercase  text-primary px-4">
                         Fungsional yang </h1>
                     <h1
-                        class="inline-block bg-white  rounded-br-lg backdrop-blur-lg font-Rowdies font-bold text-[37px] uppercase  text-primary px-4">
+                        class="inline-block rounded-br-lg backdrop-blur-sm font-Rowdies font-bold text-[37px] uppercase  text-primary px-4">
                         sesuai dengan </h1>
                     <h1
-                        class="inline-block bg-white  rounded-br-lg backdrop-blur-lg font-Rowdies font-bold text-[37px] uppercase  text-primary px-4">
+                        class="inline-block rounded-br-lg backdrop-blur-sm font-Rowdies font-bold text-[37px] uppercase  text-primary px-4">
                         jadwal Anda</h1>
 
                     <p class="font-medium text-md text-white backdrop-blur-sm p-2 rounded-md">Dengan HealthMate, kamu

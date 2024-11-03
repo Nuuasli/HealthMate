@@ -11,18 +11,18 @@
                     d="M0,94L350,0L960,80L1440,32L1440,0L960,0L480,0L0,0Z"></path>
             </svg>
             <img src="img/banner.jpg" alt="" class="relative -top-[280px] -z-10 grayscale">
-            <div class="absolute w-5/12 px-4 py-4 top-44 left-16">
+            <div class="absolute w-1/2 px-4 py-4 top-44 left-16 ">
                 <h1
-                    class="inline-block bg-white  rounded-tr-lg backdrop-blur-lg font-protest font-bold text-[40px]  text-primary px-4">
+                    class="inline-block backdrop-blur-sm rounded-tr-lg  font-Rowdies font-bold text-[40px]  text-primary px-4">
                     GYM PREMIUM</h1>
                 <h1
-                    class="inline-block bg-white rounded-r-lg backdrop-blur-sm font-protest font-bold text-[40px]  text-primary px-4">
+                    class="inline-block backdrop-blur-sm rounded-r-lg  font-Rowdies font-bold text-[40px]  text-primary px-4">
                     DENGAN 24-JAM </h1>
                 <h1
-                    class="inline-block bg-white  backdrop-blur-sm font-protest font-bold text-[40px]  text-primary px-4">
+                    class="inline-block backdrop-blur-sm font-Rowdies font-bold text-[40px]  text-primary px-4">
                     AKSES MASUK </h1>
                 <h1
-                    class="inline-block bg-white rounded-r-lg backdrop-blur-sm font-protest font-bold text-[40px]  text-primary px-4">
+                    class="inline-block backdrop-blur-sm rounded-r-lg  font-Rowdies font-bold text-[40px]  text-primary px-4">
                     DAN JADWAL LATIHAN</h1>
                 <p class="font-medium text-md text-white backdrop-blur-sm p-2 rounded-md">Dengan HealthMate, kamu
                     bebas berlatih kapan saja! Platform kami
