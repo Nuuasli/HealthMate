@@ -65,9 +65,33 @@
         </div>
 
         <div class="mx-auto">
-            <p>Site design by <a href="https://tailwindcss.com/" class="text-primary hover:underline">Tailwindcss</a> |
+            <p>Site design by <a href="https://tailwindcss.com/" class="text-blue-400 hover:underline">Tailwindcss</a> |
                 Built by <a href="https://laravel.com/" class="text-primary hover:underline">Laravel</a></p>
         </div>
 
     </div>
 </footer>
+
+{{-- script maps --}}
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+<script>
+     // Inisialisasi peta pada elemen dengan id "map"
+     var map = L.map('map').setView([41.811169, -87.852293], 15); // Koordinat Jakarta (contoh)
+
+// Tambahkan layer OpenStreetMap
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+// Tambahkan marker pada lokasi
+L.marker([41.811169, -87.852293]).addTo(map)
+    .bindPopup('<b>HealthMate Gym</b><br>Lokasi kami di sini.')
+    .openPopup();
+   
+</script>
+{{-- script maps --}}
+</body>
+
+</html>

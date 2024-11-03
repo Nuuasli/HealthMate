@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite('resources/css/app.css')
-    <title>Document</title>
-</head>
-
-<body class="overflow-x-hidden">
     {{-- header section --}}
     <x-Navbar></x-Navbar>
     {{-- header section end --}}
-
-    {{-- content about start --}}
 
     {{-- banner about --}}
     <section id="banner">
@@ -24,8 +11,7 @@
                     <path class="shadow-lg" fill="#fff" fill-opacity="1"
                         d="M0,124L350,20L960,20L1440,162L1440,0L960,0L480,0L0,0Z"></path>
                 </svg>
-                <img src="img/banner-about.jpg" alt=""
-                    class="relative -top-[280px] brightness-75 -z-10 w-full">
+                <img src="img/banner-about.jpg" alt="" class="relative -top-[280px] brightness-75 -z-10 w-full grayscale">
                 <div class="absolute w-2/5 px-4 py-4 top-44 left-16">
                     <h1
                         class="inline-block bg-white  rounded-tr-lg backdrop-blur-lg font-Rowdies font-bold text-[37px] uppercase  text-primary px-4">
@@ -49,7 +35,7 @@
                     <div
                         class="absolute left-20 bottom-[70px] w-[150px] border-2 border-primary rounded-sm
                         bg-primary hover:bg-white focus:ring-1-primary">
-                        <a href="#" class="flex px-6 py-2 justify-center text-white hover:text-primary ">JOIN
+                        <a href="/membership" class="flex px-6 py-2 justify-center text-white hover:text-primary ">JOIN
                             MEMBER</a>
                     </div>
                 </div>
@@ -90,7 +76,7 @@
                     </div>
                     <div class="mb-6 p-2 w-1/3 relative ">
                         <!-- Link wrapping the entire image with text overlay -->
-                        <a href="/smClass" class="block rounded-md shadow-md overflow-hidden mx-auto group relative">
+                        <a href="/trainer" class="block rounded-md shadow-md overflow-hidden mx-auto group relative">
                             <!-- Image with grayscale effect and hover to color -->
                             <img src="img/15.jpg" alt=""
                                 class="mx-auto w-full grayscale group-hover:grayscale-0 transition duration-300" />
@@ -104,7 +90,7 @@
                     </div>
                     <div class="mb-6 p-2 w-1/3 relative ">
                         <!-- Link wrapping the entire image with text overlay -->
-                        <a href="/smClass" class="block rounded-md shadow-md overflow-hidden mx-auto group relative">
+                        <a href="/gym" class="block rounded-md shadow-md overflow-hidden mx-auto group relative">
                             <!-- Image with grayscale effect and hover to color -->
                             <img src="img/14.jpg" alt=""
                                 class="mx-auto w-full grayscale group-hover:grayscale-0 transition duration-300" />
@@ -178,12 +164,7 @@
     </section>
     {{-- option end --}}
 
-
-    {{-- content about end --}}
-
     {{-- footer start --}}
     <x-Footer></x-Footer>
     {{-- footer end --}}
-</body>
 
-</html>

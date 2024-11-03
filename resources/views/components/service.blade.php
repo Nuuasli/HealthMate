@@ -18,7 +18,7 @@
                 </div>
                 <div class="mb-6 p-2 w-1/3 relative ">
                     <!-- Link wrapping the entire image with text overlay -->
-                    <a href="/smClass" class="block rounded-md shadow-md overflow-hidden mx-auto group relative">
+                    <a href="/trainer" class="block rounded-md shadow-md overflow-hidden mx-auto group relative">
                         <!-- Image with grayscale effect and hover to color -->
                         <img src="img/15.jpg" alt=""
                             class="mx-auto w-full grayscale group-hover:grayscale-0 transition duration-300" />
@@ -32,7 +32,7 @@
                 </div>
                 <div class="mb-6 p-2 w-1/3 relative ">
                     <!-- Link wrapping the entire image with text overlay -->
-                    <a href="/smClass" class="block rounded-md shadow-md overflow-hidden mx-auto group relative">
+                    <a href="/gym" class="block rounded-md shadow-md overflow-hidden mx-auto group relative">
                         <!-- Image with grayscale effect and hover to color -->
                         <img src="img/14.jpg" alt=""
                             class="mx-auto w-full grayscale group-hover:grayscale-0 transition duration-300" />

@@ -2,35 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('dashbord');
-});
 
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/services', function () {
-    return view('services');
-});
-
-Route::get('/smClass', function () {
-    return view('classes');
-});
-
-Route::get('/trainer', function () {
-    return view('trainer');
-});
-
-Route::get('/gym', function () {
-    return view('gym');
-});
-
-Route::get('/membership', function () {
-    return view('membership');
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
+Route::resource('/', 'App\Http\Controllers\HealthMateControler');
+Route::resource('/about', 'App\Http\Controllers\AboutControler');
+Route::resource('/services', 'App\Http\Controllers\ServiceControler');
+Route::resource('/smClass', 'App\Http\Controllers\ClassesControler');
+Route::resource('/trainer', 'App\Http\Controllers\TrainerControler');
+Route::resource('/gym', 'App\Http\Controllers\GymControler');
+Route::resource('/membership', 'App\Http\Controllers\MembershipControler');
+Route::resource('/form-member', 'App\Http\Controllers\formControler');
+Route::resource('/contact', 'App\Http\Controllers\ContactControler');

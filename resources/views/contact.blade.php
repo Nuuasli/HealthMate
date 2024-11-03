@@ -1,136 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
+{{-- header section --}}
+<x-Navbar></x-Navbar>
+{{-- header section end --}}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite('resources/css/app.css')
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-
-    <!-- Tailwind CSS -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <title>Document</title>
-</head>
-
-<body class="overflow-x-hidden">
-    {{-- header section --}}
-    <x-Navbar></x-Navbar>
-    {{-- header section end --}}
-
-    {{-- contact --}}
-    <section class="pt-10 w-full">
-        <div class="w-full py-4 px-6">
-            <h1 class="text-5xl text-primary font-Rowdies uppercase">contact us</h1>
-            <div class="flex flex-wrap">
-                <div class="right w-1/2 px-6">
-                    <div class="container mx-auto px-4 py-8">
-                        <div id="map" class="w-[450px] h-[450px] shadow-lg border border-gray-200 ">
-                        </div>
+{{-- contact --}}
+<section class="pt-10 w-full">
+    <div class="w-full py-4 px-6">
+        <h1 class="text-5xl text-primary font-Rowdies uppercase">contact us</h1>
+        <div class="flex flex-wrap">
+            <div class="right w-1/2 px-6">
+                <div class="container mx-auto px-4 py-8">
+                    <div id="map" class="w-[450px] h-[450px] shadow-lg border border-gray-200 ">
                     </div>
-
                 </div>
-                <div class="left w-1/2 px-2 py-4">
-                    <div class="w-full">
-                        <form action="/submit-form" method="POST" class="space-y-6 w-full">
-                            @csrf
-                            <!-- Nama Depan dan Belakang -->
-                            <div>
-                                <div class="flex space-x-4 mt-2">
-                                    <div class="w-full">
-                                        <label for="name" class="block text-gray-700 font-normal">First Name<span
-                                                class="text-red-500"> *</span></label>
-                                        <input type="text" name="first_name" id="first_name"
-                                            class="w-full p-2 border bg-slate-100 border-gray-300  focus:outline-none focus:border-gray-500">
-                                    </div>
-                                    <div class="w-full">
-                                        <label for="name" class="block text-gray-700 font-normal">Last Name<span
-                                                class="text-red-500"> *</span></label>
-                                        <input type="text" name="last_name" id="last_name"
-                                            class="w-full p-2 border bg-slate-100 border-gray-300  focus:outline-none focus:border-gray-500">
-                                    </div>
 
-
+            </div>
+            <div class="left w-1/2 px-2 py-4">
+                <div class="w-full">
+                    <form action="/submit-form" method="POST" class="space-y-6 w-full">
+                        @csrf
+                        <!-- Nama Depan dan Belakang -->
+                        <div>
+                            <div class="flex space-x-4 mt-2">
+                                <div class="w-full">
+                                    <label for="name" class="block text-gray-700 font-normal">First Name<span
+                                            class="text-red-500"> *</span></label>
+                                    <input type="text" name="first_name" id="first_name"
+                                        class="w-full p-2 border bg-slate-100 border-gray-300  focus:outline-none focus:border-gray-500">
                                 </div>
-                            </div>
+                                <div class="w-full">
+                                    <label for="name" class="block text-gray-700 font-normal">Last Name<span
+                                            class="text-red-500"> *</span></label>
+                                    <input type="text" name="last_name" id="last_name"
+                                        class="w-full p-2 border bg-slate-100 border-gray-300  focus:outline-none focus:border-gray-500">
+                                </div>
 
-                            <!-- Email -->
-                            <div>
-                                <label for="email" class="block text-gray-700 font-normal">Email <span
-                                        class="text-red-500"> *</span></label>
-                                <input type="email" name="email" id="email" placeholder=""
-                                    class="w-full p-2 border bg-slate-100 border-gray-300  mt-2 focus:outline-none focus:border-gray-500">
-                            </div>
 
-                            <!-- Telepon -->
-                            <div>
-                                <label for="phone" class="block text-gray-700 font-normal">Phone <span
-                                        class="text-red-500"> *</span></label>
-                                <input type="tel" name="phone" id="phone" placeholder=""
-                                    class="w-full p-2 border bg-slate-100 border-gray-300  mt-2 focus:outline-none focus:border-gray-500">
                             </div>
+                        </div>
 
-                            <!-- Preferensi Kontak -->
-                            <div>
-                                <label for="contact_preference" class="block text-gray-700 font-medium">I prefer to be
-                                    contacted via : <span class="text-red-500"> *</span></label>
-                                <select name="contact_preference" id="contact_preference"
-                                    class="w-full p-2 border bg-slate-100 border-gray-300  mt-2 focus:outline-none focus:border-gray-500">
-                                    <option value="" disabled selected>Select an option</option>
-                                    <option value="email">Email</option>
-                                    <option value="phone">Phone</option>
-                                    <option value="text">Text</option>
-                                </select>
-                            </div>
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="block text-gray-700 font-normal">Email <span
+                                    class="text-red-500"> *</span></label>
+                            <input type="email" name="email" id="email" placeholder=""
+                                class="w-full p-2 border bg-slate-100 border-gray-300  mt-2 focus:outline-none focus:border-gray-500">
+                        </div>
 
-                            <!-- Pesan -->
-                            <div>
-                                <label for="message" class="block text-gray-700 font-medium">Message <span
-                                        class="text-red-500"> *</span></label>
-                                <textarea name="message" id="message" rows="4"
-                                    class="w-full p-2 border bg-slate-100 border-gray-300  mt-2 focus:outline-none focus:border-gray-500"></textarea>
-                            </div>
+                        <!-- Telepon -->
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-normal">Phone <span
+                                    class="text-red-500"> *</span></label>
+                            <input type="tel" name="phone" id="phone" placeholder=""
+                                class="w-full p-2 border bg-slate-100 border-gray-300  mt-2 focus:outline-none focus:border-gray-500">
+                        </div>
 
-                            <!-- Tombol Submit -->
-                            <div class="flex justify-end">
-                                <button type="submit mx-auto"
-                                    class="w-full  md:w-auto px-6 py-2 mt-4 border border-primary text-primary font-medium  hover:bg-primary hover:text-white transition">
-                                    Submit
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+                        <!-- Preferensi Kontak -->
+                        <div>
+                            <label for="contact_preference" class="block text-gray-700 font-medium">I prefer to be
+                                contacted via : <span class="text-red-500"> *</span></label>
+                            <select name="contact_preference" id="contact_preference"
+                                class="w-full p-2 border bg-slate-100 border-gray-300  mt-2 focus:outline-none focus:border-gray-500">
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="email">Email</option>
+                                <option value="phone">Phone</option>
+                                <option value="text">Text</option>
+                            </select>
+                        </div>
 
+                        <!-- Pesan -->
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium">Message <span
+                                    class="text-red-500"> *</span></label>
+                            <textarea name="message" id="message" rows="4"
+                                class="w-full p-2 border bg-slate-100 border-gray-300  mt-2 focus:outline-none focus:border-gray-500"></textarea>
+                        </div>
+
+                        <!-- Tombol Submit -->
+                        <div class="flex justify-end">
+                            <button type="submit mx-auto"
+                                class="w-full  md:w-auto px-6 py-2 mt-4 border border-primary text-primary font-medium  hover:bg-primary hover:text-white transition">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
                 </div>
+
             </div>
         </div>
-    </section>
-    {{-- contact end --}}
+    </div>
+</section>
+{{-- contact end --}}
 
-    {{-- footer start --}}
-    <x-Footer></x-Footer>
-    {{-- footer end --}}
+{{-- footer start --}}
+<x-Footer></x-Footer>
+{{-- footer end --}}
 
-    {{-- script maps --}}
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
-    <script>
-        // Inisialisasi peta pada elemen dengan id "map"
-        var map = L.map('map').setView([41.811169, -87.852293], 15); // Koordinat Jakarta (contoh)
-
-        // Tambahkan layer OpenStreetMap
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        // Tambahkan marker pada lokasi
-        L.marker([41.811169, -87.852293]).addTo(map)
-            .bindPopup('<b>HealthMate Gym</b><br>Lokasi kami di sini.')
-            .openPopup();
-    </script>
-    {{-- script maps --}}
-</body>
-
-</html>
