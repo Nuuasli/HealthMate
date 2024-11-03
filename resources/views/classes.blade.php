@@ -95,7 +95,7 @@
                         </div>
                         <div class="flex flex-col mr-7">
                             <a href=""
-                                class="px-8 py-2 bg-primary rounded-full hover:bg-opacity-90 hover:ring-2 hover:ring-primary">Daftar</a>
+                                class="px-8 py-2 bg-primary rounded-full hover:bg-opacity-90 hover:ring-2 hover:ring-primary hover:text-white">Daftar</a>
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@
                         </div>
                         <div class="flex flex-col mr-7">
                             <a href=""
-                                class="px-8 py-2 bg-primary rounded-full hover:bg-opacity-90 hover:ring-2 hover:ring-primary">Daftar</a>
+                                class="px-8 py-2 bg-primary rounded-full hover:bg-opacity-90 hover:ring-2 hover:ring-primary hover:text-white">Daftar</a>
                         </div>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
                         </div>
                         <div class="flex flex-col mr-7">
                             <a href=""
-                                class="px-8 py-2 bg-primary rounded-full hover:bg-opacity-90 hover:ring-2 hover:ring-primary">Daftar</a>
+                                class="px-8 py-2 bg-primary rounded-full hover:bg-opacity-90 hover:ring-2 hover:ring-primary hover:text-white">Daftar</a>
                         </div>
                     </div>
                 </div>
