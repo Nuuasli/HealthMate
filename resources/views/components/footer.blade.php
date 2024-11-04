@@ -28,14 +28,14 @@
                     <li class="mb-6"><a href="/contact" class="hover:text-primary font-semibold uppercase">Contact</a>
                     </li>
                     <div class="flex mt-4">
-                        <a href="#" class="text-primary hover:text-white w-9 h-9 text-center mr-2">
+                        <a href="#" target="_blank" class="text-primary hover:text-white w-9 h-9 text-center mr-2">
                             <svg role="img" class="fill-current" width="25" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <title>Facebook</title>
                                 <path
                                     d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" />
                             </svg></a>
-                        <a href="#" class="text-primary hover:text-white w-9 h-9 text-center">
+                        <a href="#" target="_blank" class="text-primary hover:text-white w-9 h-9 text-center">
                             <svg role="img" class="fill-current" width="25" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <title>Instagram</title>
@@ -51,7 +51,7 @@
         <div class="w-full md:w-1/3 mx-auto text-center">
             <h3 class="font-bold uppercase mb-4 text-xl">Stay in the Know</h3>
             <form action="#" method="POST" class="mb-4 w-3/4 mx-auto">
-                <input type="email" placeholder="Email Address" class="w-full p-2 text-black">
+                <input type="email" placeholder="Email Address" target="_blank" class="w-full p-2 text-black">
                 <button type="submit" class="bg-primary text-white px-4 py-2 mt-2 w-full uppercase">Subscribe</button>
             </form>
             <!-- Social Icons -->
@@ -65,7 +65,7 @@
         </div>
 
         <div class="mx-auto">
-            <p>Site design by <a href="https://tailwindcss.com/" class="text-blue-400 hover:underline">Tailwindcss</a> |
+            <p>Site design by <a href="https://tailwindcss.com/" target="_blank" class="text-blue-400 hover:underline">Tailwindcss</a> |
                 Built by <a href="https://laravel.com/" class="text-primary hover:underline">Laravel</a></p>
         </div>
 
@@ -89,7 +89,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 L.marker([41.811169, -87.852293]).addTo(map)
     .bindPopup('<b>HealthMate Gym</b><br>Lokasi kami di sini.')
     .openPopup();
-   
+
 </script>
 {{-- script maps --}}
 </body>

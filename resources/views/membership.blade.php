@@ -18,9 +18,6 @@
                     <div
                         class=" w-[160px] border-2 ml-4 border-primary rounded-sm
                                 bg-primary focus:ring-1-primary">
-                        <a href="#"
-                            class="flex px-6 py-2 justify-center text-black border-black border-b-2 hover:ring-black hover:ring-2 hover:border-none ">JOIN
-                            MEMBER</a>
                     </div>
                 </div>
                 <div class="w-1/2 p-2 mx-auto  -mt-48">
