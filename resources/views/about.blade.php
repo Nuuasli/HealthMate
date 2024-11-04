@@ -1,8 +1,6 @@
+@extends('layout')
 
-    {{-- header section --}}
-    <x-Navbar></x-Navbar>
-    {{-- header section end --}}
-
+@section('content')
     {{-- banner about --}}
     <section id="banner">
         <div class="w-full shadow-lg flex font-mono h-[700px] ">
@@ -11,7 +9,7 @@
                     <path class="shadow-lg" fill="#fff" fill-opacity="1"
                         d="M0,124L350,20L960,20L1440,162L1440,0L960,0L480,0L0,0Z"></path>
                 </svg>
-                <img src="img/banner-about.jpg" alt="" class="relative -top-[280px] brightness-75 -z-10 w-full grayscale">
+                <img src="img/banner-about.png" alt="" class="relative -top-[280px] brightness-75 -z-10 w-full grayscale">
                 <div class="absolute w-2/5 px-4 py-4 top-44 left-16">
                     <h1
                         class="inline-block rounded-tr-lg backdrop-blur-sm font-Rowdies font-bold text-[37px] uppercase  text-primary px-4">
@@ -163,8 +161,5 @@
         </div>
     </section>
     {{-- option end --}}
-
-    {{-- footer start --}}
-    <x-Footer></x-Footer>
-    {{-- footer end --}}
+    @endsection
 

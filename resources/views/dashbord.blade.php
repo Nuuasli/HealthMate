@@ -1,8 +1,7 @@
-{{-- header section --}}
-<x-Navbar></x-Navbar>
-{{-- header section end --}}
+@extends('layout')
 
 {{-- banner section --}}
+@section('content')
 <section id="banner">
     <div class="w-full shadow-lg flex font-mono h-[700px] ">
         <div class="relative banner w-full h-full ">
@@ -294,8 +293,6 @@
         </div>
 </section>
 {{-- banner section end --}}
+@endsection
 
-{{-- footer start --}}
-<x-Footer></x-Footer>
-{{-- footer end --}}
 

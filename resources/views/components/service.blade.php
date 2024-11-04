@@ -7,11 +7,11 @@
                     <a href="/smClass" class="block rounded-md shadow-md overflow-hidden mx-auto group relative">
                         <!-- Image with grayscale effect and hover to color -->
                         <img src="img/13.jpg" alt=""
-                            class="mx-auto w-full grayscale group-hover:grayscale-0 transition duration-300" />
+                            class="mx-auto w-full grayscale group-hover:grayscale-0 transition duration-300 group-hover:scale-125" />
 
                         <!-- Text overlay with smaller font and shadow -->
                         <span
-                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-Rowdies font-semibold z-10 text-primary text-3xl text-center uppercase  group-hover:bg-white rounded-lg text-shadow-md">
+                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-Rowdies font-semibold z-10 text-primary text-3xl text-center uppercase   text-shadow-md">
                             Small Group
                         </span>
                     </a>
@@ -21,11 +21,11 @@
                     <a href="/trainer" class="block rounded-md shadow-md overflow-hidden mx-auto group relative">
                         <!-- Image with grayscale effect and hover to color -->
                         <img src="img/15.jpg" alt=""
-                            class="mx-auto w-full grayscale group-hover:grayscale-0 transition duration-300" />
+                            class="mx-auto w-full grayscale group-hover:grayscale-0 transition duration-300 group-hover:scale-125" />
 
                         <!-- Text overlay with smaller font and shadow -->
                         <span
-                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-Rowdies font-semibold z-10 text-primary text-3xl text-center uppercase  group-hover:bg-white rounded-lg text-shadow-md">
+                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-Rowdies font-semibold z-10 text-primary text-3xl text-center uppercase   text-shadow-md">
                             personal trainer
                         </span>
                     </a>
@@ -35,11 +35,11 @@
                     <a href="/gym" class="block rounded-md shadow-md overflow-hidden mx-auto group relative">
                         <!-- Image with grayscale effect and hover to color -->
                         <img src="img/14.jpg" alt=""
-                            class="mx-auto w-full grayscale group-hover:grayscale-0 transition duration-300" />
+                            class="mx-auto w-full grayscale group-hover:grayscale-0 transition duration-300 group-hover:scale-125" />
 
                         <!-- Text overlay with smaller font and shadow -->
                         <span
-                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-Rowdies font-semibold z-10 text-primary text-3xl text-center uppercase  group-hover:bg-white rounded-lg text-shadow-md">
+                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-Rowdies font-semibold z-10 text-primary text-3xl text-center uppercase   text-shadow-md">
                             24/7 gym
                         </span>
                     </a>

@@ -1,7 +1,6 @@
-{{-- header section --}}
-<x-Navbar></x-Navbar>
-{{-- header section end --}}
+@extends('layout')
 
+@section('content')
 {{-- banner --}}
 <section id="banner">
     <div class="w-full shadow-lg flex font-mono h-[700px] ">
@@ -149,7 +148,4 @@
 
 {{-- scadule classes end --}}
 
-{{-- footer start --}}
-<x-Footer></x-Footer>
-{{-- footer end --}}
-
+@endsection

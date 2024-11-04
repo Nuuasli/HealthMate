@@ -1,7 +1,6 @@
-{{-- header section --}}
-<x-Navbar></x-Navbar>
-{{-- header section end --}}
+@extends('layout')
 
+@section('content')
 {{-- contact --}}
 <section class="pt-10 w-full">
     <div class="w-full py-4 px-6">
@@ -91,8 +90,6 @@
 </section>
 {{-- contact end --}}
 
-{{-- footer start --}}
-<x-Footer></x-Footer>
-{{-- footer end --}}
+@endsection
 
 
