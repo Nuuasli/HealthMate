@@ -18,19 +18,19 @@
                 <!-- Left Links (About, Service) -->
                 <div class="flex">
                     <a href="/about"
-                        class="text-dark tracking-widest  text-md font-semibold relative p-4 
-                hover:text-primary before:absolute before:bottom-2 before:left-0 
-                before:w-full before:h-[2px] before:bg-primary before:scale-x-0 
-                before:origin-center hover:before:scale-x-100 before:transition 
+                        class="text-dark tracking-widest  text-md font-semibold relative p-4
+                hover:text-primary before:absolute before:bottom-2 before:left-0
+                before:w-full before:h-[2px] before:bg-primary before:scale-x-0
+                before:origin-center hover:before:scale-x-100 before:transition
                 before:duration-300">
                         ABOUT
                     </a>
                     <div class="flex group ">
                         <a href="/services"
-                            class="text-dark tracking-widest text-md font-semibold relative p-4 
-                        hover:text-primary before:absolute before:bottom-1 before:left-0 
-                        before:w-full before:h-[2px] before:bg-primary before:scale-x-0 
-                        before:origin-center hover:before:scale-x-100 before:transition 
+                            class="text-dark tracking-widest text-md font-semibold relative p-4
+                        hover:text-primary before:absolute before:bottom-1 before:left-0
+                        before:w-full before:h-[2px] before:bg-primary before:scale-x-0
+                        before:origin-center hover:before:scale-x-100 before:transition
                         before:duration-300">
                             SERVICES
                         </a>
@@ -61,16 +61,16 @@
                 <!-- Right Links (Membership, Contact) -->
                 <div class="flex mr-46">
                     <a href="/membership"
-                        class="text-dark tracking-widest text-md font-semibold relative p-4 
-                hover:text-primary before:absolute before:bottom-2 before:left-0 
-                before:w-full before:h-[2px] before:bg-primary before:scale-x-0 
-                before:origin-center hover:before:scale-x-100 before:transition 
+                        class="text-dark tracking-widest text-md font-semibold relative p-4
+                hover:text-primary before:absolute before:bottom-2 before:left-0
+                before:w-full before:h-[2px] before:bg-primary before:scale-x-0
+                before:origin-center hover:before:scale-x-100 before:transition
                 before:duration-300">MEMBERSHIP</a>
                     <a href="/contact"
-                        class="text-dark tracking-widest text-md font-semibold relative p-4 
-                hover:text-primary before:absolute before:bottom-2 before:left-0 
-                before:w-full before:h-[2px] before:bg-primary before:scale-x-0 
-                before:origin-center hover:before:scale-x-100 before:transition 
+                        class="text-dark tracking-widest text-md font-semibold relative p-4
+                hover:text-primary before:absolute before:bottom-2 before:left-0
+                before:w-full before:h-[2px] before:bg-primary before:scale-x-0
+                before:origin-center hover:before:scale-x-100 before:transition
                 before:duration-300 ">CONTACT</a>
                 </div>
             </div>
@@ -87,7 +87,7 @@
         <div class="container mx-auto flex flex-wrap justify-between mt-20">
             <!-- Left Section (Contact Info) -->
             <div class="w-full md:w-1/3 mb-8 md:mb-0">
-                <img src="img/HealthMate.png" alt="HealthMate Logo" class="mb-4 w-4/6">
+                <img src="img/HealthMate2.png" alt="HealthMate Logo" class="mb-4 w-4/6">
                 <p class="ml-10">Brookfield,Illinois,<br> Amerika Serikat</p>
                 <p class="mt-4 ml-10">(123) 345-6789</p>
                 <a href="mailto:info@healthmate.com" class="hover:text-primary ml-10">info@healthmate.com</a>

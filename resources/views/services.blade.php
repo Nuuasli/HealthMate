@@ -8,9 +8,9 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#fff" fill-opacity="1" d="M0,130L720,0L1440,0L1440,0L720,0L0,0Z"></path>
             </svg>
-            <img src="img/banner-service.jpg" alt=""
+            <img src="img/banner-service.png" alt=""
                 class="relative -top-[280px] brightness-75 -z-10 w-full grayscale">
-            <div class="absolute w-2/5 px-4 py-4 top-44 left-16">
+                <div class="absolute w-2/5 px-4 py-4 top-44 left-16">
                 <h1
                     class="inline-block  rounded-tr-lg backdrop-blur-sm font-Rowdies font-bold text-[37px] uppercase  text-primary px-4">
                     sesuai dengan kebutuhan Anda </h1>

@@ -8,7 +8,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#fff" fill-opacity="1" d="M0,0L1440,0L1440,130L720,0L720,0L0,0Z"></path>
             </svg>
-            <img src="img/banner-trainer.jpg" alt=""
+            <img src="img/banner-trainer.png" alt=""
                 class="relative -top-[280px] brightness-75 -z-10 w-full grayscale">
             <div class="absolute w-2/5 px-4 py-4 top-16 left-16">
                 <h1

@@ -62,7 +62,7 @@
                         <!-- Link wrapping the entire image with text overlay -->
                         <a href="/smClass" class="block rounded-md shadow-md overflow-hidden mx-auto group relative">
                             <!-- Image with grayscale effect and hover to color -->
-                            <img src="img/13.jpg" alt=""
+                            <img src="img/13.png" alt=""
                                 class="mx-auto w-full grayscale group-hover:grayscale-0 transition duration-300 group-hover:scale-110" />
 
                             <!-- Text overlay with smaller font and shadow -->

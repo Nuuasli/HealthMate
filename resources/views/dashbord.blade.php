@@ -85,7 +85,7 @@
                 <div class=" w-1/2 p-6">
                     <span class="absolute bg-primary w-[300px] h-[500px] -mt-12 -z-10 left-0">
                     </span>
-                    <div class="z-10"> <img src="img/6.jpg" alt=""></div>
+                    <div class="z-10"> <img src="img/6.png" alt=""></div>
 
                 </div>
                 <div class=" w-1/2 p-6">
@@ -170,7 +170,7 @@
                     </div>
                     <div class="w-1/2 p-6 text-white mx-auto relative ">
                         <span class="absolute w-[450px] h-[560px] bg-primary -top-6 right-0 rounded-lg"></span>
-                        <img class="absolute w-[450px] rounded-lg right-10 mx-auto" src="img/7.jpg" alt="">
+                        <img class="absolute w-[450px] rounded-lg right-10 mx-auto" src="img/7.png" alt="">
                     </div>
                 </div>
             </div>
