@@ -1,3 +1,4 @@
+<title>{{ env('APP_NAME') }} - About Us</title>
 @extends('layout')
 
 @section('content')

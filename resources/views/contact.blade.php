@@ -1,3 +1,4 @@
+<title>{{ env('APP_NAME') }} - Contact Us</title>
 @extends('layout')
 
 @section('content')

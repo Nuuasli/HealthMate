@@ -1,3 +1,4 @@
+<title>{{ env('APP_NAME') }} - Classes & Schedule</title>
 @extends('layout')
 
 @section('content')

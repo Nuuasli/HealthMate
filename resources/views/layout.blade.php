@@ -151,13 +151,13 @@
         <!-- Bottom Copyright Section, sticks to the bottom -->
         <div class="container mx-auto mt-auto text-center text-sm flex flex-wrap">
             <div class="mx-auto">
-                <p>&copy; 2024 HealthMate | Nashville Gym, Training & Fitness</p>
+                <p>&copy; 2024 HealthMate | Brookfield Gym, Training & Fitness</p>
             </div>
 
             <div class="mx-auto">
                 <p>Site design by <a href="https://tailwindcss.com/" target="_blank"
                         class="text-blue-400 hover:underline">Tailwindcss</a> |
-                    Built by <a href="https://laravel.com/" class="text-primary hover:underline">Laravel</a></p>
+                    Built by <a href="https://laravel.com/" target="_blank" class="text-primary hover:underline">Laravel</a></p>
             </div>
 
         </div>

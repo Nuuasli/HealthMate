@@ -1,3 +1,4 @@
+<title>{{ env('APP_NAME') }} - Personal Trainer</title>
 @extends('layout')
 
 @section('content')

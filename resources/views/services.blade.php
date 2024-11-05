@@ -1,3 +1,4 @@
+<title>{{ env('APP_NAME') }} - Services</title>
 @extends('layout')
 
 @section('content')

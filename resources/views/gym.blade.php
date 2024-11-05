@@ -1,3 +1,4 @@
+<title>{{ env('APP_NAME') }} - 24/7 GYM</title>
 @extends('layout')
 
 @section('content')
