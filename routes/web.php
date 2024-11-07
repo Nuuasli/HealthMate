@@ -10,5 +10,6 @@ Route::resource('/smClass', 'App\Http\Controllers\ClassesControler');
 Route::resource('/trainer', 'App\Http\Controllers\TrainerControler');
 Route::resource('/gym', 'App\Http\Controllers\GymControler');
 Route::resource('/membership', 'App\Http\Controllers\MembershipControler');
-Route::resource('/form-member', 'App\Http\Controllers\formControler');
 Route::resource('/contact', 'App\Http\Controllers\ContactControler');
+Route::resource('/classes', 'App\Http\Controllers\smallclassControler');
+Route::resource('/member', 'App\Http\Controllers\memberControler');
