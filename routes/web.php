@@ -22,3 +22,4 @@ foreach ($pages as $uri => $view) {
 // controler
 Route::resource('/classes', 'App\Http\Controllers\smallclassControler');
 Route::resource('/member', 'App\Http\Controllers\memberControler');
+Route::resource('/pelatih', 'App\Http\Controllers\pelatihControler');

@@ -10,7 +10,7 @@
                 </div>
                 <a href=""
                     class="px-4 py-2 bg-primary text-white rounded-md capitalize hover:text-primary hover:bg-white hover:ring-2 hover:ring-primary">
-                    Add kelas
+                    tambah kelas
                 </a>
             </div>
 

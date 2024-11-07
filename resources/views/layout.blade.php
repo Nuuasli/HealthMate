@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="img/hm-logo.png">
+    <link rel="icon" href="/img/hm-logo.png">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     @vite('resources/css/app.css')
@@ -56,7 +56,7 @@
                 <!-- Logo (Centered) -->
                 <div class="flex justify-center px-4 py-1">
                     <a href="/" class="text-white text-2xl font-bold"><img class="w-full h-24"
-                            src="img/healthmate.png" alt="Logo"></a>
+                            src="/img/healthmate.png" alt="Logo"></a>
                 </div>
 
                 <!-- Right Links (Membership, Contact) -->

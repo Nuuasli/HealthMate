@@ -5,12 +5,12 @@
         <div class="p-6 bg-gray-100 rounded-lg shadow-md">
             <div class="flex items-center justify-between pb-4">
                 <div>
-                    <h2 class=" font-semibold uppercase px-4 pt-4 text-primary text-5xl font-Rowdies">member</h2>
-                    <p class="text-md text-secondary px-4 pb-2 capitalize">daftar member bulan ini</p>
+                    <h2 class=" font-semibold uppercase px-4 pt-4 text-primary text-5xl font-Rowdies">Pelatih</h2>
+                    <p class="text-md text-secondary px-4 pb-2 capitalize">daftar pelatih yang akan memandu di kelas.</p>
                 </div>
-                <a href="{{ route('member.create') }}"
+                <a href="{{ route('pelatih.create') }}"
                     class="px-4 py-2 bg-primary text-white rounded-md hover:text-primary hover:bg-white hover:ring-2 hover:ring-primary capitalize">
-                    tambah member
+                    tambah pelatih
                 </a>
             </div>
 
@@ -20,7 +20,7 @@
                         <thead>
                             <tr class="text-center border-2 border-black border-collapse  bg-slate-300">
                                 <th class="px-6 py-3 text-black font-md uppercase border-2 border-black">ID</th>
-                                <th class="px-6 py-3 text-black  font-md uppercase border-2 border-black">nama member</th>
+                                <th class="px-6 py-3 text-black  font-md uppercase border-2 border-black">nama pellatih</th>
                                 <th class="px-6 py-3 text-black  font-md uppercase border-2 border-black">telepon</th>
                                 <th class="px-6 py-3 text-black  font-md uppercase border-2 border-black">email</th>
                                 <th class="px-6 py-3 text-black  font-md uppercase">aksi</th>

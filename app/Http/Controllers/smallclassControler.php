@@ -19,7 +19,7 @@ class smallclassControler extends Controller
      */
     public function create()
     {
-        //
+        return view('smallclass.create');
     }
 
     /**
@@ -27,7 +27,7 @@ class smallclassControler extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
