@@ -28,7 +28,6 @@ class pelatihControler extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
         DB::table('pelatihs')->insert([
             'nama_pelatih' => $request->nama_pelatih,
             'telepon' => $request->telepon,

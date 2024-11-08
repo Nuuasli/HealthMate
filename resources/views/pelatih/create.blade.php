@@ -40,10 +40,11 @@
 
                 <!-- Submit Button -->
                 <div class="flex justify-end mt-6">
-                    <input type="submit"
+                    <button type="submit"
                         class="px-6 py-2
                         text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
-                    </input>
+                    simpan
+                    </button>
                 </div>
             </form>
         </div>
