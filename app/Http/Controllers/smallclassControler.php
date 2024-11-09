@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class smallclassControler extends Controller
 {
@@ -11,7 +12,10 @@ class smallclassControler extends Controller
      */
     public function index()
     {
-        return view('smallclass.index');
+        $kelass = DB::table('kelass')->join('pelatihs', 'kelass.id_pelatih', '=' , 'pelatihs.id')
+        ->select('kelass.*', 'pelatihs.nama_pelatih as id_pelatih')
+        ->get();
+        return view('smallclass.index', compact('kelass'));
     }
 
     /**
@@ -19,7 +23,8 @@ class smallclassControler extends Controller
      */
     public function create()
     {
-        return view('smallclass.create');
+        $pelatihs = DB::table('pelatihs')->get();
+        return view('smallclass.create', compact('pelatihs'));
     }
 
     /**
@@ -27,7 +32,15 @@ class smallclassControler extends Controller
      */
     public function store(Request $request)
     {
-        
+        DB::table('kelass')->insert([
+            'id' => $request->id,
+            'nama_kelas' => $request->nama_kelas,
+            'id_pelatih' => $request->id_pelatih,
+            'jam' => $request->jam,
+            'jam_selesai' => $request->jam_selesai,
+            'Quota' => $request->Quota
+        ]);
+        return redirect()->route('classes.index')->with('success', 'Data kelas berhasil ditambahkan.');
     }
 
     /**
@@ -43,7 +56,9 @@ class smallclassControler extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $data = DB::table('kelass')->where('id', $id)->first();
+        $pelatihs = DB::table('pelatihs')->get();
+        return view('smallclass.update', compact('data','pelatihs'));
     }
 
     /**
@@ -51,7 +66,14 @@ class smallclassControler extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        DB::table('kelass')->where('id', $id)->update([
+            'nama_kelas' => $request->nama_kelas,
+            'id_pelatih' => $request->id_pelatih,
+            'jam' => $request->jam,
+            'jam_selesai' => $request->jam_selesai,
+            'Quota' => $request->Quota
+        ]);
+        return redirect()->route('classes.index')->with('success', 'Data kelas berhasil diedit.');
     }
 
     /**
@@ -59,6 +81,7 @@ class smallclassControler extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        DB::table('kelass')->where('id', $id)->delete();
+        return redirect()->route('classes.index')->with('success', 'Data pelatih berhasil diedit.');
     }
 }

@@ -1,3 +1,4 @@
+<title>tambah pelatih</title>
 @extends('layout')
 
 @section('content')
@@ -6,13 +7,6 @@
             <h2 class="text-2xl font-semibold text-gray-700 text-center">Tambah Data Pelatih</h2>
             <form method="POST" action="{{ route('pelatih.store') }}" class="mt-6">
                 @csrf
-                <!-- ID -->
-                <div class="mb-4 hidden">
-                    <label for="id" class="block text-gray-700">ID</label>
-                    <input type="text" id="id" name="id"
-                        class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
-                        placeholder="" required>
-                </div>
 
                 <!-- Nama Member -->
                 <div class="mb-4">
@@ -25,7 +19,7 @@
                 <!-- Telepon -->
                 <div class="mb-4">
                     <label for="telepon" class="block text-gray-700">Telepon</label>
-                    <input type="tel" id="telepon" name="telepon"
+                    <input type="text" id="telepon" name="telepon"
                         class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
                         placeholder="Nomor Telepon" required>
                 </div>

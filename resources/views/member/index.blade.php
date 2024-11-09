@@ -1,3 +1,4 @@
+<title>member</title>
 @extends('layout')
 
 @section('content')
@@ -27,24 +28,29 @@
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-slate-300">
-                            <tr class="">
-                                <td class="px-6 py-4 font-md text-secondary ">1</td>
-                                <td class="px-6 py-4 font-md text-secondary ">C-BUM</td>
-                                <td class="px-6 py-4 font-md text-secondary ">082987876765</td>
-                                <td class="px-6 py-4 font-md text-secondary ">criistbumstir@gmail.com</td>
-                                <td class="px-6 py-4 flex justify-around">
-                                    <a href="" class="text-primary text-2xl px-2 py-1 border-2 border-slate-200 hover:border-2 rounded-full hover:border-primary"><i class="bi bi-trash3"></i></a>
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td class="px-6 py-4 font-md text-secondary ">1</td>
-                                <td class="px-6 py-4 font-md text-secondary ">C-BUM</td>
-                                <td class="px-6 py-4 font-md text-secondary ">082987876765</td>
-                                <td class="px-6 py-4 font-md text-secondary ">criistbumstir@gmail.com</td>
-                                <td class="px-6 py-4 flex justify-around">
-                                    <a href="" class="text-primary text-2xl px-2 py-1 border-2 border-slate-200 hover:border-2 rounded-full hover:border-primary"><i class="bi bi-trash3"></i></a>
-                                </td>
-                            </tr>
+                            @foreach ($members as $m)
+                                <tr class="relative">
+                                    <td class="px-6 py-4 font-md text-secondary ">{{ $m->id }}</td>
+                                    <td class="px-6 py-4 font-md text-secondary ">{{ $m->nama_member }}</td>
+                                    <td class="px-6 py-4 font-md text-secondary ">{{ $m->telepon }}</td>
+                                    <td class="px-6 py-4 font-md text-secondary ">{{ $m->email }}</td>
+                                    <td class="px-6 py-4 flex justify-end">
+                                        <a href="{{ route('member.edit', [$m->id]) }}"
+                                            class="absolute right-20 text-sky-700 text-2xl px-2 py-2 border-2 border-slate-200 hover:border-2 rounded-full hover:border-sky-700"><i
+                                                class="bi bi-pencil-square"></i></a>
+                                                
+                                                <form action="{{ route('member.destroy', $m->id) }}" method="POST" style="display:inline;">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit"
+                                                        class="-right-10 text-primary text-2xl px-2 py-2 border-2 border-slate-200 hover:border-2 rounded-full hover:border-primary bg-transparent"
+                                                        title="Delete">
+                                                        <i class="bi bi-trash3"></i>
+                                                    </button>
+                                                </form>
+                                    </td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

@@ -1,4 +1,4 @@
-<title>{{ env('APP_NAME') }} - Classes & Schedule</title>
+<title>{{ config('app.name') }} - Classes & Schedule</title>
 @extends('layout')
 
 @section('content')

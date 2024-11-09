@@ -1,4 +1,4 @@
-<title>{{ env('APP_NAME') }} - Membership</title>
+<title>{{ config('app.name') }} - Membership</title>
 @extends('layout')
 
 @section('content')

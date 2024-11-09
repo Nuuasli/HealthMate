@@ -1,4 +1,4 @@
-<title>{{ env('APP_NAME') }} - Services</title>
+<title>{{ config('app.name') }} - Services</title>
 @extends('layout')
 
 @section('content')

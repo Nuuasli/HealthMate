@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     @vite('resources/css/app.css')
-    <title>{{ env('APP_NAME') }}</title>
+    <title>{{ config('app.name') }}</title>
 </head>
 
 <body class="overflow-x-hidden">
@@ -88,7 +88,7 @@
         <div class="container mx-auto flex flex-wrap justify-between mt-20">
             <!-- Left Section (Contact Info) -->
             <div class="w-full md:w-1/3 mb-8 md:mb-0">
-                <img src="img/HealthMate2.png" alt="HealthMate Logo" class="mb-4 w-4/6">
+                <img src="/img/HealthMate2.png" alt="HealthMate Logo" class="mb-4 w-4/6">
                 <p class="ml-10">Brookfield,Illinois,<br> Amerika Serikat</p>
                 <p class="mt-4 ml-10">(123) 345-6789</p>
                 <a href="mailto:info@healthmate.com" class="hover:text-primary ml-10">info@healthmate.com</a>

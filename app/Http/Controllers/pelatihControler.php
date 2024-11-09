@@ -12,7 +12,8 @@ class pelatihControler extends Controller
      */
     public function index()
     {
-        return view('pelatih.index');
+        $pelatihs = DB::table('pelatihs')->get();
+        return view('pelatih.index', compact('pelatihs'));
     }
 
     /**
@@ -29,6 +30,7 @@ class pelatihControler extends Controller
     public function store(Request $request)
     {
         DB::table('pelatihs')->insert([
+            'id' => $request->id,
             'nama_pelatih' => $request->nama_pelatih,
             'telepon' => $request->telepon,
             'email' => $request->email
@@ -49,7 +51,8 @@ class pelatihControler extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $data = DB::table('pelatihs')->where('id', $id)->first();
+        return view('pelatih.update', compact('data'));
     }
 
     /**
@@ -57,7 +60,12 @@ class pelatihControler extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        DB::table('pelatihs')->where('id', $id)->update([
+            'nama_pelatih' => $request->nama_pelatih,
+            'telepon' => $request->telepon,
+            'email' => $request->email
+        ]);
+        return redirect()->route('pelatih.index')->with('success', 'Data pelatih berhasil diedit.');
     }
 
     /**
@@ -65,6 +73,7 @@ class pelatihControler extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        DB::table('pelatihs')->where('id', $id)->delete();
+        return redirect()->route('pelatih.index')->with('success', 'Data pelatih berhasil diedit.');
     }
 }

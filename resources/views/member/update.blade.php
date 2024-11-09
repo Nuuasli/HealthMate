@@ -4,16 +4,16 @@
 @section('content')
     <div class="container bg-slate-300 py-20">
         <div class="max-w-3xl mx-auto bg-white p-6 rounded-md shadow-md">
-            <h2 class="text-2xl font-semibold text-gray-700 text-center">Tambah Data pelatih</h2>
-            <form  method="POST" action="{{ route('pelatih.update', [$data->id]) }}" class="mt-6">
+            <h2 class="text-2xl font-semibold text-gray-700 text-center">Tambah Data Member</h2>
+            <form  method="POST" action="{{ route('member.update', [$data->id]) }}" class="mt-6">
                 @csrf
                 @method('PUT')
                 <!-- Nama Member -->
                 <div class="mb-4">
-                    <label for="nama_pelatih" class="block text-gray-700">Nama pelatih</label>
-                    <input type="text" id="nama_pelatih" name="nama_pelatih"
+                    <label for="nama_member" class="block text-gray-700">Nama Member</label>
+                    <input type="text" id="nama_member" name="nama_member"
                         class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
-                        placeholder="Nama Lengkap" value="{{ $data->nama_pelatih }}" required>
+                        placeholder="Nama Lengkap" value="{{ $data->nama_member }}" required>
                 </div>
 
                 <!-- Telepon -->

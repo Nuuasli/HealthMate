@@ -1,18 +1,12 @@
+<title>tambah kelas</title>
 @extends('layout')
 
 @section('content')
     <div class="container bg-slate-300 py-20">
         <div class="max-w-3xl mx-auto bg-white p-6 rounded-md shadow-md">
             <h2 class="text-2xl font-semibold text-gray-700 text-center">Tambah Data Member</h2>
-            <form action="{{ route('smallclass.store') }}" method="POST " class="mt-6">
+            <form method="POST" action="{{ route('classes.store') }}" class="mt-6">
                 @csrf
-                <!-- ID -->
-                <div class="mb-4 hidden">
-                    <label for="id" class="block text-gray-700">ID</label>
-                    <input type="text" id="id" name="id"
-                        class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
-                        placeholder="ID Member" required>
-                </div>
 
                 <!-- Nama Kelas -->
                 <div class="mb-4">
@@ -24,18 +18,31 @@
 
                 <!-- pelatih -->
                 <div class="mb-4">
-                    <label for="pelatih" class="block text-gray-700">Pelatih</label>
-                    <input type="tel" id="pelatih" name="pelatih"
-                        class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
-                        placeholder="Nama Pelatih" required>
+                    <label for="id_pelatihpelatih" class="block text-gray-700">Pelatih</label>
+                    <select name="id_pelatih" id="id_pelatih"
+                        class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500">
+                        <option value="" disabled selected class="text-secondary">Pilih Pelatih</option>
+                        @foreach ($pelatihs as $k )
+                        <option value="{{ $k->id }}">{{ $k->nama_pelatih }}</option>
+                        @endforeach
+                        
+                    </select>
                 </div>
 
                 <!-- Email -->
                 <div class="mb-4">
-                    <label for="Jam" class="block text-gray-700">Jam</label>
-                    <input type="Jam" id="Jam" name="Jam"
+                    <label for="jam" class="block text-gray-700">Jam</label>
+                    <input type="jam" id="jam" name="jam"
                         class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
-                        placeholder="Masukan Jam" required>
+                        placeholder="Masukan jam" required>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-4">
+                    <label for="jam_selesai" class="block text-gray-700">Jam selesai</label>
+                    <input type="jam_selesai" id="jam_selesai" name="jam_selesai"
+                        class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
+                        placeholder="Masukan jam" required>
                 </div>
                 
                 <!-- Email -->
