@@ -78,69 +78,35 @@
                     sebelum bergabung di kelas pertama!</h1>
             </div>
             <div class="container flex flex-col pt-20  w-4/5 mx-auto">
+                @foreach ($kelass as $k)
                 <div class="flex px-4 py-4 justify-between bg-white rounded-lg shadow-xl border-2 mb-2">
-                    <div class="w-1/3 flex justify-around">
-                        <div class="flex flex-col">
-                            <p class="text-sm">06:00 am</p>
-                            <p class="text-xs ml-2 text-secondary">07:00 am</p>
+                    <div class="w-1/2 flex justify-start">
+                        <div class="flex flex-col ml-10 mr-20">
+                            <p class="text-sm">{{ $k->jam }} am</p>
+                            <p class="text-xs ml-2 text-secondary">{{ $k->jam_selesai }} am</p>
                         </div>
-                        <div class="flex flex-col">
-                            <h1 class="text-md capitalize font-bold font-Rowdies">Latihan grup kecil</h1>
-                            <p class="text-sm text-secondary">bersama pelatih</p>
+                        <div class="flex flex-col ">
+                            <h1 class="text-md capitalize font-bold font-Rowdies">{{ $k->nama_kelas }}</h1>
+                            <p class="text-sm text-secondary">bersama {{ $k->id_pelatih }}</p>
                         </div>
                     </div>
                     <div class="w-3/5 flex justify-end">
                         <div class="flex mr-7 ">
-                            <p class="text-sm my-auto">8 orang</p>
+                            <p class="text-sm my-auto">{{ $k->Quota }} orang</p>
                         </div>
-                        <div class="flex flex-col mr-7">
-                            <a href=""
-                                class="px-8 py-2 bg-primary rounded-full hover:bg-opacity-90 hover:ring-2 hover:ring-primary hover:text-white">Daftar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex px-4 py-4 justify-between bg-white rounded-lg shadow-xl border-2 mb-2">
-                    <div class="w-1/3 flex justify-around">
-                        <div class="flex flex-col">
-                            <p class="text-sm">06:00 am</p>
-                            <p class="text-xs ml-2 text-secondary">07:00 am</p>
-                        </div>
-                        <div class="flex flex-col">
-                            <h1 class="text-md capitalize font-bold font-Rowdies">Latihan grup kecil</h1>
-                            <p class="text-sm text-secondary">bersama pelatih</p>
-                        </div>
-                    </div>
-                    <div class="w-3/5 flex justify-end">
-                        <div class="flex mr-7 ">
-                            <p class="text-sm my-auto">8 orang</p>
-                        </div>
-                        <div class="flex flex-col mr-7">
-                            <a href=""
-                                class="px-8 py-2 bg-primary rounded-full hover:bg-opacity-90 hover:ring-2 hover:ring-primary hover:text-white">Daftar</a>
+                        <div class="flex flex-col mr-7 h-2">
+                            <form method="POST" action="{{ route('smClass.store') }}">
+                                @csrf
+                                <input type="hidden" name="kelas_id" value="{{ $k->id }}">
+                                <button type="submit"
+                                        class="px-8 py-2 bg-primary rounded-full hover:bg-opacity-90 hover:ring-2 hover:ring-primary hover:text-white">
+                                    Daftar
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <div class="flex px-4 py-4 justify-between bg-white rounded-lg shadow-xl border-2 mb-2">
-                    <div class="w-1/3 flex justify-around">
-                        <div class="flex flex-col">
-                            <p class="text-sm">06:00 am</p>
-                            <p class="text-xs ml-2 text-secondary">07:00 am</p>
-                        </div>
-                        <div class="flex flex-col">
-                            <h1 class="text-md capitalize font-bold font-Rowdies">Latihan grup kecil</h1>
-                            <p class="text-sm text-secondary">bersama pelatih</p>
-                        </div>
-                    </div>
-                    <div class="w-3/5 flex justify-end">
-                        <div class="flex mr-7 ">
-                            <p class="text-sm my-auto">8 orang</p>
-                        </div>
-                        <div class="flex flex-col mr-7">
-                            <a href=""
-                                class="px-8 py-2 bg-primary rounded-full hover:bg-opacity-90 hover:ring-2 hover:ring-primary hover:text-white">Daftar</a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
