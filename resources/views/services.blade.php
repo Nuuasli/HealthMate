@@ -25,7 +25,7 @@
                 <div
                     class=" w-[150px] border-2 border-primary rounded-sm
                         bg-primary hover:bg-white focus:ring-1-primary">
-                    <a href="#" class="flex px-6 py-2 justify-center text-white hover:text-primary ">JOIN
+                    <a href="/membership" class="flex px-6 py-2 justify-center text-white hover:text-primary ">JOIN
                         MEMBER</a>
                 </div>
             </div>

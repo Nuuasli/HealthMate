@@ -16,7 +16,7 @@
             </div>
             <div class="left w-1/2 px-2 py-4">
                 <div class="w-full">
-                    <form action="/submit-form" method="POST" class="space-y-6 w-full">
+                    <form method="POST" action="{{ route('contact.store') }}"  class="space-y-6 w-full">
                         @csrf
                         <!-- Nama Depan dan Belakang -->
                         <div>
@@ -48,24 +48,12 @@
 
                         <!-- Telepon -->
                         <div>
-                            <label for="phone" class="block text-gray-700 font-normal">Phone <span
+                            <label for="telepon" class="block text-gray-700 font-normal">telepon <span
                                     class="text-red-500"> *</span></label>
-                            <input type="tel" name="phone" id="phone" placeholder=""
+                            <input type="tel" name="telepon" id="telepon" placeholder=""
                                 class="w-full p-2 border bg-slate-100 border-gray-300  mt-2 focus:outline-none focus:border-gray-500">
                         </div>
 
-                        <!-- Preferensi Kontak -->
-                        <div>
-                            <label for="contact_preference" class="block text-gray-700 font-medium">I prefer to be
-                                contacted via : <span class="text-red-500"> *</span></label>
-                            <select name="contact_preference" id="contact_preference"
-                                class="w-full p-2 border bg-slate-100 border-gray-300  mt-2 focus:outline-none focus:border-gray-500">
-                                <option value="" disabled selected>Select an option</option>
-                                <option value="email">Email</option>
-                                <option value="phone">Phone</option>
-                                <option value="text">Text</option>
-                            </select>
-                        </div>
 
                         <!-- Pesan -->
                         <div>

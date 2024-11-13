@@ -24,7 +24,7 @@
                 <div
                     class=" w-[150px] border-2 border-primary rounded-sm
                         bg-primary hover:bg-white focus:ring-1-primary">
-                    <a href="//membership" class="flex px-6 py-2 justify-center text-white hover:text-primary ">JOIN
+                    <a href="/membership" class="flex px-6 py-2 justify-center text-white hover:text-primary ">JOIN
                         MEMBER</a>
                 </div>
             </div>
@@ -51,7 +51,7 @@
                             canggih yang ramah hewan peliharaan dengan disediakan kamar mandi dan sauna untuk
                             kebebasan
                             anda latihan sendiri di waktu Anda sendiri.</p>
-                        <a href="" class="text-primary border-b-2 capitalize py-2 border-primary ">lihat
+                        <a href="/membership" class="text-primary border-b-2 capitalize py-2 border-primary ">lihat
                             lebih
                             lanjut</a>
                     </div>
@@ -63,7 +63,7 @@
                             kebugaran dan kelompok kecil untuk fokus pada pengembangan dan penyempurnaan kekuatan
                             dan
                             daya tahan otot dan kardiovaskular.</p>
-                        <a href="" class="text-primary border-b-2 capitalize py-2 border-primary ">
+                        <a href="/smClass" class="text-primary border-b-2 capitalize py-2 border-primary ">
                             jadwalkan kelas pertama anda</a>
                     </div>
                 </div>

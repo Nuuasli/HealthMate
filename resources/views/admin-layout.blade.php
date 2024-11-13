@@ -77,6 +77,46 @@
             </div>
         </nav>
     </header>
+        <!-- resources/views/components/sidebar.blade.php -->
+<div class="h-screen w-64 bg-white border-r border-gray-200 flex flex-col">
+    <!-- Menu -->
+    <nav class="flex-1 px-4 py-6 space-y-4">
+        <h1 class="flex font-Rowdies text-3xl items-center px-4 py-2 text-primary rounded-lg">
+            <span class="ml-3">Dashboard</span>
+        </h1>
+        <a href="{{ route('member.index') }}" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-lg">
+            <span class="text-xl"><i class="bi bi-people"></i></span>
+            <span class="ml-3 capitalize">member</span>
+        </a>
+        <a href="{{ route('pelatih.index') }}" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-lg">
+            <span  class="text-xl"><i class="bi bi-person-raised-hand"></i></span>
+            <span class="ml-3 capitalize">pelatih</span>
+        </a>
+        <a href="{{ route('classes.index') }}" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-lg">
+            <span  class="text-xl"><i class="bi bi-journals"></i></span>
+            <span class="ml-3 capitalize">kelas</span>
+        </a>
+        <a href="" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-lg">
+            <span  class="text-xl"><i class="bi bi-person"></i></span>
+            <span class="ml-3 capitalize">user</span>
+        </a>
+    </nav>
+
+    <!-- Teams -->
+    <div class="px-4 py-6">
+        <h2 class="text-xl ml-6 font-Rowdies text-primary font-semibol uppercase tracking-wide">Opsi</h2>
+        <div class="mt-4 space-y-2">
+            <a href="#" class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg">
+                <span  class="text-xl"><i class="bi bi-door-open"></i></span>
+                <span class="ml-3 capitalize">logout</span>
+            </a>
+            <a href="#" class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg">
+                <span  class="text-xl"><i class="bi bi-person-plus"></i></span>
+                <span class="ml-3 capitalize">Register user</span>
+            </a>
+        </div>
+    </div>
+</div>
 
     @yield('content')
 
