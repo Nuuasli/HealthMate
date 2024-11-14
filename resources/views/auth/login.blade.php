@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    @vite('resources/css/app.css')
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
@@ -14,8 +15,8 @@
         <form action="{{ route('login') }}" method="POST" class="bg-white p-6 rounded-lg shadow-md">
             @csrf
             <div class="mb-4">
-                <label for="email" class="block text-gray-700">Email</label>
-                <input type="email" name="email" id="email"
+                <label for="username" class="block text-gray-700">username</label>
+                <input type="username" name="username" id="username"
                     class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-primary" required>
             </div>
             <div class="mb-6">
@@ -23,8 +24,17 @@
                 <input type="password" name="password" id="password"
                     class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-primary" required>
             </div>
-            <button type="submit"
-                class="w-full px-4 py-2 bg-primary text-white rounded-lg hover:bg-opacity-90">Login</button>
+            <div class="mb-4">
+                <label for="status" class="block text-gray-700">status</label>
+                <select name="status" id="status"
+                    class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500">
+                    <option value="" disabled selected class="text-secondary">Pilih status</option>                     
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>                                              
+                </select>
+            </div>
+
+            <button type="submit" class="w-full bg-primary text-white py-2 rounded-lg">Login</button>
             <p class="text-sm text-center mt-4">
                 Belum punya akun? <a href="{{ route('register') }}" class="text-primary font-semibold">Register</a>
             </p>

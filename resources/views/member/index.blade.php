@@ -5,7 +5,10 @@
     <section>
         <div class="p-6 bg-gray-100 rounded-lg shadow-md">
             <div class="flex items-center justify-between pb-4">
-                <div>
+                <div class="w-[10%] text-center">
+                    <a href="/admin" class="text-3xl"><i class="bi bi-arrow-left-circle"></i></a>
+                </div>
+                <div class="mx-auto text-center">
                     <h2 class=" font-semibold uppercase px-4 pt-4 text-primary text-5xl font-Rowdies">member</h2>
                     <p class="text-md text-secondary px-4 pb-2 capitalize">daftar member bulan ini</p>
                 </div>
