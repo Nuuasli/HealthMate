@@ -41,7 +41,7 @@
                     </div>
 
                     <div class="flex w-full">
-                        <h1 class="text-3xl mx-auto capitalize font-Rowdies py-6">{{ $count_p }}</h1>
+                        <h1 class="text-3xl mx-auto capitalize font-Rowdies py-6">{{ $count_k }}</h1>
                     </div>
 
                 </div>

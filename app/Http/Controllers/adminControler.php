@@ -15,7 +15,7 @@ class adminControler extends Controller
         $count_m = DB::table('members')->count();
         $count_p = DB::table('pelatihs')->count();
         $count_k = DB::table('kelass')->count();
-        return view('admin.index',compact('count_m'), compact('count_p'), compact('count_k') );
+        return view('admin.index', compact('count_m', 'count_p', 'count_k'));
     }
 
     /**

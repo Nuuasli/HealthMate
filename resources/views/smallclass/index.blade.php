@@ -1,13 +1,10 @@
 <title>kelas</title>
-@extends('layout')
+@extends('admin-layout')
 
 @section('content')
     <section>
-        <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+        <div class="p-6 w-4/5  bg-gray-100 absolute rounded-lg shadow-md top-40 ml-64">
             <div class="flex items-center justify-between pb-4">
-                <div class="w-[10%] text-center">
-                    <a href="/admin" class="text-3xl "><i class="bi bi-arrow-left-circle"></i></a>
-                </div>
                 <div class="mx-auto text-center">
                     <h2 class=" font-semibold uppercase px-4 pt-4 text-primary text-5xl font-Rowdies">classes</h2>
                     <p class="text-md text-secondary px-4 pb-2 capitalize">beberapa list kelas yang bisa diikuti oleh member
@@ -45,14 +42,14 @@
                                     <td class="px-6 py-4 font-md text-secondary ">{{ $k->Quota }}</td>
                                     <td class="px-6 py-4 flex justify-end">
                                         <a href="{{ route('classes.edit', [$k->id]) }}"
-                                            class="absolute right-40 text-sky-700 text-2xl px-2 py-2 border-2 border-slate-200 hover:border-2 rounded-full hover:border-sky-700"><i
+                                            class="absolute right-[120px] text-sky-700 text-2xl px-2 py-2 border-2 border-slate-200 hover:border-2 rounded-full hover:border-sky-700"><i
                                                 class="bi bi-pencil-square"></i></a>
                                         <form action="{{ route('classes.destroy', $k->id) }}" method="POST"
                                             style="display:inline;">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit"
-                                                class="mr-5 text-primary text-2xl px-2 py-2 border-2 border-slate-200 hover:border-2 rounded-full hover:border-primary bg-transparent"
+                                                class="-right-10 text-primary text-2xl px-2 py-2 border-2 border-slate-200 hover:border-2 rounded-full hover:border-primary bg-transparent"
                                                 title="Delete">
                                                 <i class="bi bi-trash3"></i>
                                             </button>

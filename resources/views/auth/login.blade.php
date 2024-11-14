@@ -24,16 +24,6 @@
                 <input type="password" name="password" id="password"
                     class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-primary" required>
             </div>
-            <div class="mb-4">
-                <label for="status" class="block text-gray-700">status</label>
-                <select name="status" id="status"
-                    class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500">
-                    <option value="" disabled selected class="text-secondary">Pilih status</option>                     
-                    <option value="user">User</option>
-                    <option value="admin">Admin</option>                                              
-                </select>
-            </div>
-
             <button type="submit" class="w-full bg-primary text-white py-2 rounded-lg">Login</button>
             <p class="text-sm text-center mt-4">
                 Belum punya akun? <a href="{{ route('register') }}" class="text-primary font-semibold">Register</a>

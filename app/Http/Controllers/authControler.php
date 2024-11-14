@@ -41,18 +41,24 @@ class AuthControler extends Controller
 
     // Handle Login Form Submission
     public function login(Request $request)
-    {
-        $credentials = $request->only('username', 'password');
+{
+    $credentials = $request->only('username', 'password');
 
-        if (Auth::attempt($credentials)) {
-            $request->session()->regenerate();
-            return redirect()->intended('/')->with('success', 'Welcome back!');
+    if (Auth::attempt($credentials)) {
+        $request->session()->regenerate();
+
+        // Redirect based on the user's status
+        if (Auth::user()->status === 'admin') {
+            return redirect()->route('admin.index')->with('success', 'Welcome Admin!');
+        } else {
+            return redirect('/')->with('success', 'Welcome back!');
         }
-
-        return back()->withErrors([
-            'username' => 'The provided credentials do not match our records.',
-        ]);
     }
+
+    return back()->withErrors([
+        'username' => 'The provided credentials do not match our records.',
+    ]);
+}
 
     // Logout
     public function logout(Request $request)

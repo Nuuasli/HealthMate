@@ -82,7 +82,7 @@
     <!-- Menu -->
     <nav class="flex-1 px-4 py-6 space-y-4">
         <h1 class="flex font-Rowdies text-3xl items-center px-4 py-2 text-primary rounded-lg">
-            <span class="ml-3">Dashboard</span>
+            <a href="{{ route('admin.index') }}"><span class="ml-3">Dashboard</span></a>
         </h1>
         <a href="{{ route('member.index') }}" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-lg">
             <span class="text-xl"><i class="bi bi-people"></i></span>

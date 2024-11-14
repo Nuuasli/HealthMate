@@ -75,6 +75,13 @@
                 before:duration-300 ">CONTACT</a>
                 </div>
             </div>
+            <div class="">
+                <form action="{{ route('logout') }}" method="POST" style="display: inline;">
+                    @csrf
+                    <button type="submit" class="btn btn-danger  py-2 px-4 bg-primary mt-7 text-white rounded">Logout</button>
+                </form>
+            </div>
+            
         </nav>
     </header>
 
