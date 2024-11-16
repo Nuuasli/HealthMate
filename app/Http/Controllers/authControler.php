@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
+use Illuminate\Support\Facades\Log;
 
 class AuthControler extends Controller
 {
@@ -44,10 +45,11 @@ class AuthControler extends Controller
 {
     $credentials = $request->only('username', 'password');
 
+    // Pastikan Auth::attempt menggunakan username dan password yang benar
     if (Auth::attempt($credentials)) {
         $request->session()->regenerate();
 
-        // Redirect based on the user's status
+        // Redirect berdasarkan status user
         if (Auth::user()->status === 'admin') {
             return redirect()->route('admin.index')->with('success', 'Welcome Admin!');
         } else {
@@ -55,9 +57,11 @@ class AuthControler extends Controller
         }
     }
 
+    // Jika login gagal
     return back()->withErrors([
         'username' => 'The provided credentials do not match our records.',
     ]);
+
 }
 
     // Logout

@@ -98,6 +98,7 @@
                             <form method="POST" action="{{ route('smClass.store') }}">
                                 @csrf
                                 <input type="hidden" name="kelas_id" value="{{ $k->id }}">
+                                {{-- <input type="hidden" name="user_id" value="{{ $user_id }}"> --}}
                                 <button type="submit"
                                         class="px-8 py-2 bg-primary rounded-full hover:bg-opacity-90 hover:ring-2 hover:ring-primary hover:text-white">
                                     Daftar

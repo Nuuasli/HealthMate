@@ -39,7 +39,7 @@ use App\Http\Controllers\AuthControler;
     Route::resource('/smClass', 'App\Http\Controllers\memberclassControler');
     Route::resource('/contact', 'App\Http\Controllers\contactControler');
     Route::resource('/admin', 'App\Http\Controllers\adminControler');
-// });
+// `});`
 
 //authentication
 Route::get('/login', [AuthControler::class, 'showLogin'])->name('login');

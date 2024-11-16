@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
+use App\Models\UserClass; // Model untuk tabel penghubung atau tabel tujuan
 
 class memberclassControler extends Controller
 {
@@ -12,9 +14,9 @@ class memberclassControler extends Controller
      */
     public function index()
     {
-        $kelass = DB::table('kelass')->join('pelatihs', 'kelass.id_pelatih', '=' , 'pelatihs.id')
-        ->select('kelass.*', 'pelatihs.nama_pelatih as id_pelatih')
-        ->get();
+        $kelass = DB::table('kelass')->join('pelatihs', 'kelass.id_pelatih', '=', 'pelatihs.id')
+            ->select('kelass.*', 'pelatihs.nama_pelatih as id_pelatih')
+            ->get();
         return view('classes', compact('kelass'));
     }
 
@@ -31,22 +33,23 @@ class memberclassControler extends Controller
      */
     public function store(Request $request)
     {
-    // Validasi data, jika diperlukan
-    // $request->validate([
-    //     'kelas_id' => 'required|exists:kelass,id',
-    // ]);
+        // Pastikan user sudah login
+        if (!Auth::check()) {
+            return redirect()->route('login')->with('error', 'You need to log in first.');
+        }
 
-    // Data yang akan disimpan ke tabel pendaftaran
-    // DB::table('pendaftaran')->insert([
-    //     'kelas_id' => $request->kelas_id,
-    //     'user_id' => auth()->id(), // ID user yang sedang login
-    //     'created_at' => now(),
-    //     'updated_at' => now(),
-    // ]);
+        // Validasi input
+        $request->validate([
+            'kelas_id' => 'required|exists:kelass,id', // Pastikan ID kelas valid
+        ]);
 
-    // Redirect dengan pesan sukses
-    // return redirect()->back()->with('success', 'Berhasil mendaftar kelas!');
+        // Simpan data ke database
+        UserClass::create([
+            'user_id' => Auth::id(), // Ambil ID user yang sedang login
+            'kelas_id' => $request->kelas_id,
+        ]);
 
+        return redirect()->back()->with('success', 'Successfully registered to the class.');
     }
 
     /**
