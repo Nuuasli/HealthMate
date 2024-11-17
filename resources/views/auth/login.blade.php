@@ -11,12 +11,13 @@
 
 <body class="flex items-center justify-center h-screen bg-gray-100">
     <div class="w-full max-w-md">
-        <h2 class="text-center text-2xl font-bold mb-4">Login</h2>
-        <form action="{{ route('login') }}" method="POST" class="bg-white p-6 rounded-lg shadow-md">
+        
+        <form method="POST" action="{{ route('login') }}" class="bg-white p-6 rounded-lg shadow-md">
             @csrf
+            <h2 class="text-center text-3xl font-bold mb-4 uppercase font-Rowdies ">Login</h2>
             <div class="mb-4">
                 <label for="username" class="block text-gray-700">username</label>
-                <input type="username" name="username" id="username"
+                <input type="text" name="username" id="username"
                     class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-primary" required>
             </div>
             <div class="mb-6">
@@ -30,6 +31,28 @@
             </p>
         </form>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    @if ($message = session('success'))
+        <script>
+            Swal.fire({
+                title: "Good Job!",
+                text: "{{ $message }}",
+                icon: "success"
+            });
+        </script>
+    @endif
+
+    @if ($message = Session::get('error'))
+        <script>
+            Swal.fire({
+                title: "You in trable",
+                text: "{{ $message }}",
+                icon: "error"
+            });
+        </script>
+    @endif
 </body>
 
 </html>

@@ -78,10 +78,11 @@
             <div class="">
                 <form action="{{ route('logout') }}" method="POST" style="display: inline;">
                     @csrf
-                    <button type="submit" class="btn btn-danger  py-2 px-4 bg-primary mt-7 text-white rounded">Logout</button>
+                    <button type="submit"
+                        class="btn btn-danger  py-2 px-4 bg-primary mt-7 text-white rounded">Logout</button>
                 </form>
             </div>
-            
+
         </nav>
     </header>
 
@@ -161,7 +162,8 @@
             <div class="mx-auto">
                 <p>Site design by <a href="https://tailwindcss.com/" target="_blank"
                         class="text-blue-400 hover:underline">Tailwindcss</a> |
-                    Built by <a href="https://laravel.com/" target="_blank" class="text-primary hover:underline">Laravel</a></p>
+                    Built by <a href="https://laravel.com/" target="_blank"
+                        class="text-primary hover:underline">Laravel</a></p>
             </div>
 
         </div>
@@ -169,6 +171,28 @@
 
     {{-- script maps --}}
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    @if ($message = session('success'))
+        <script>
+            Swal.fire({
+                title: "Good Job!",
+                text: "{{ $message }}",
+                icon: "success"
+            });
+        </script>
+    @endif
+
+    @if ($message = Session::get('error'))
+        <script>
+            Swal.fire({
+                title: "You in trable",
+                text: "{{ $message }}",
+                icon: "success"
+            });
+        </script>
+    @endif
+
 
     <script>
         // Inisialisasi peta pada elemen dengan id "map"

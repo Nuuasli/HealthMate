@@ -199,6 +199,28 @@
 
     {{-- script maps --}}
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    @if ($message = session('success'))
+        <script>
+            Swal.fire({
+                title: "Good Job!",
+                text: "{{ $message }}",
+                icon: "success"
+            });
+        </script>
+    @endif
+
+    @if ($message = Session::get('error'))
+        <script>
+            Swal.fire({
+                title: "You in trable",
+                text: "{{ $message }}",
+                icon: "error"
+            });
+        </script>
+    @endif
+
 
     <script>
         // Inisialisasi peta pada elemen dengan id "map"
