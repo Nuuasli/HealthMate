@@ -96,6 +96,10 @@
             <span  class="text-xl"><i class="bi bi-journals"></i></span>
             <span class="ml-3 capitalize">kelas</span>
         </a>
+        <a href="{{ route('pendaftaran.index') }}" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-lg">
+            <span class="text-xl"><i class="bi bi-people"></i></span>
+            <span class="ml-3 capitalize">pendaftaran</span>
+        </a>
     </nav>
 
     <!-- Teams -->

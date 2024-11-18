@@ -208,7 +208,26 @@
         L.marker([41.811169, -87.852293]).addTo(map)
             .bindPopup('<b>HealthMate Gym</b><br>Lokasi kami di sini.')
             .openPopup();
+
+        function openModal(kelasId, kelasNama) {
+            // Masukkan data kelas ke dalam modal
+            document.getElementById('kelas_id').value = kelasId;
+            document.getElementById('kelas_nama').value = kelasNama;
+
+            // Tampilkan modal
+            const modal = document.getElementById('modalForm');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            // Sembunyikan modal
+            const modal = document.getElementById('modalForm');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
     </script>
+
     {{-- script maps --}}
 </body>
 

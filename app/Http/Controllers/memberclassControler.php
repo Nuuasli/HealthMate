@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use App\Models\UserClass; // Model untuk tabel penghubung atau tabel tujuan
 
+use App\Models\Registration;
+
 class memberclassControler extends Controller
 {
     /**
@@ -33,23 +35,34 @@ class memberclassControler extends Controller
      */
     public function store(Request $request)
     {
+        DB::table('pendaftarankelass')->insert([
+            'id' => $request->id,
+            'nama' => $request->nama,
+            'email' => $request->email,
+            'kelas_id' => $request->kelas_id    
+        ]);
+
+        return back()->with('success', 'Registration successful!');
+
+// onclik pendaftaran
         // Pastikan user sudah login
-        if (!Auth::check()) {
-            return redirect()->route('login')->with('error', 'You need to log in first.');
-        }
+        // if (!Auth::check()) {
+        //     return redirect()->route('login')->with('error', 'You need to log in first.');
+        // }
 
         // Validasi input
-        $request->validate([
-            'kelas_id' => 'required|exists:kelass,id', // Pastikan ID kelas valid
-        ]);
+        // $request->validate([
+        //     'kelas_id' => 'required|exists:kelass,id', // Pastikan ID kelas valid
+        // ]);
 
         // Simpan data ke database
-        UserClass::create([
-            'user_id' => Auth::id(), // Ambil ID user yang sedang login
-            'kelas_id' => $request->kelas_id,
-        ]);
+        // UserClass::create([
+        //     'user_id' => Auth::id(), // Ambil ID user yang sedang login
+        //     'kelas_id' => $request->kelas_id,
+        // ]);
 
-        return redirect()->back()->with('success', 'Successfully registered to the class.');
+        // return redirect()->back()->with('success', 'Successfully registered to the class.');
+// onclik pendaftaran        
     }
 
     /**

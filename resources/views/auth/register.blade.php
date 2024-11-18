@@ -43,8 +43,8 @@
 
                 <button type="submit" class="w-full bg-primary text-white py-2 rounded-lg">Register</button>
             </form>
-            <p class="text-sm mt-4 text-center">Already have an account? <a href="{{ route('login') }}"
-                    class="text-primary">Login</a></p>
+            {{-- <p class="text-sm mt-4 text-center">Already have an account? <a href="{{ route('login') }}"
+                    class="text-primary">Login</a></p> --}}
         </div>
     </div>
 
