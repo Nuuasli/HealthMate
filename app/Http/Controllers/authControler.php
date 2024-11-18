@@ -40,7 +40,7 @@ class AuthControler extends Controller
         return redirect()->route('login')->with('success', 'Registration successful. Please log in.');
     }
 
-    // Handle Login Form Submission
+    // Handle Login Form Submission 
     public function login(Request $request)
 {
     $credentials = $request->only('username', 'password');

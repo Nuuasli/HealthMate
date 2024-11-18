@@ -13,13 +13,12 @@ return new class extends Migration
     {
         Schema::create('pendaftarans', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('kelas_id');
-            $table->timestamps();
-    
-            // Foreign key constraints
             $table->foreignId('user_id')->references('id_user')->on('userss')->onDelete('cascade');
             $table->foreignId('kelas_id')->references('id')->on('kelass')->onDelete('cascade');
+            $table->timestamps();
+
+            // Foreign key constraints
+
         });
     }
 
