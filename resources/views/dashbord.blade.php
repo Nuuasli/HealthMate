@@ -2,11 +2,11 @@
 
 {{-- banner section --}}
 @section('content')
-    @if (Auth::check())
+    {{-- @if (Auth::check())
         <p>ID User yang login: {{ Auth::id() }}</p>
     @else
         <p>Tidak ada user yang login.</p>
-    @endif
+    @endif --}}
     <section id="banner">
         <div class="w-full shadow-lg flex font-mono h-[700px] ">
             <div class="relative banner w-full h-full ">
