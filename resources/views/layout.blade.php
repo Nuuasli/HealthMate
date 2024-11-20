@@ -75,7 +75,7 @@
                 before:duration-300 ">CONTACT</a>
                 </div>
             </div>
-            <div class="">
+            <div class="absolute right-20">
                 <form action="{{ route('logout') }}" method="POST" style="display: inline;">
                     @csrf
                     <button type="submit"
