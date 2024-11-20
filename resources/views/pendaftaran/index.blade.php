@@ -32,7 +32,7 @@
                                     <td class="px-6 py-4 font-md text-secondary ">{{ $p->email }}</td>
                                     <td class="px-6 py-4 font-md text-secondary ">{{ $p->nama_kelas }}</td>
                                     <td class="px-6 py-4 flex justify-center">
-                                        <form action="{{ route('member.destroy', $p->id) }}" method="POST"
+                                        <form action="{{ route('pendaftaran.destroy', $p->id) }}" method="POST"
                                             style="display:inline;">
                                             @csrf
                                             @method('DELETE')
