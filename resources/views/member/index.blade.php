@@ -1,4 +1,4 @@
-<title>member</title>
+<title>admin - member</title>
 @extends('admin-layout')
 
 @section('content')

@@ -1,4 +1,4 @@
-<title>kelas</title>
+<title>admin - kelas</title>
 @extends('admin-layout')
 
 @section('content')

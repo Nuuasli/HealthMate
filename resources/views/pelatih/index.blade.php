@@ -1,4 +1,4 @@
-<title>pelatih</title>
+<title>admin - pelatih</title>
 @extends('admin-layout')
 
 @section('content')
