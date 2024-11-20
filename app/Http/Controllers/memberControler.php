@@ -74,6 +74,6 @@ class memberControler extends Controller
     public function destroy(string $id)
     {
         DB::table('members')->where('id', $id)->delete();
-        return redirect()->route('member.index')->with('success', 'Data member berhasil diedit.');
+        return redirect()->route('member.index')->with('success', 'Data member berhasil dihapus.');
     }
 }

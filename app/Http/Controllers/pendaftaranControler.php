@@ -64,6 +64,7 @@ class pendaftaranControler extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        DB::table('pendaftarans')->where('id', $id)->delete();
+        return redirect()->route('pendaftaran.index')->with('success', 'Data peendaftaran berhasil dihapus.');
     }
 }

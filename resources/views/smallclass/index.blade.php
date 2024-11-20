@@ -3,7 +3,7 @@
 
 @section('content')
     <section>
-        <div class="p-6 w-4/5  bg-gray-100 absolute rounded-lg shadow-md top-40 ml-64">
+        <div class="p-6 w-full  bg-gray-100 flex flex-col  rounded-lg">
             <div class="flex items-center justify-between pb-4">
                 <div class="mx-auto text-center">
                     <h2 class=" font-semibold uppercase px-4 pt-4 text-primary text-5xl font-Rowdies">classes</h2>

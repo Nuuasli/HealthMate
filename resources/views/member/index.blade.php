@@ -3,7 +3,7 @@
 
 @section('content')
     <section>
-        <div class="p-6 w-4/5  bg-gray-100 absolute rounded-lg shadow-md top-40 ml-64">
+        <div class="p-6 w-full  bg-gray-100 flex flex-col  rounded-lg">
             <div class="flex items-center justify-between pb-4">
                 <div class="mx-auto text-center">
                     <h2 class=" font-semibold uppercase px-4 pt-4 text-primary text-5xl font-Rowdies">member</h2>
@@ -38,16 +38,17 @@
                                         <a href="{{ route('member.edit', [$m->id]) }}"
                                             class="absolute right-[69px] text-sky-700 text-2xl px-2 py-2 border-2 border-slate-200 hover:border-2 rounded-full hover:border-sky-700"><i
                                                 class="bi bi-pencil-square"></i></a>
-                                                
-                                                <form action="{{ route('member.destroy', $m->id) }}" method="POST" style="display:inline;">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit"
-                                                        class="-right-10 text-primary text-2xl px-2 py-2 border-2 border-slate-200 hover:border-2 rounded-full hover:border-primary bg-transparent"
-                                                        title="Delete">
-                                                        <i class="bi bi-trash3"></i>
-                                                    </button>
-                                                </form>
+
+                                        <form action="{{ route('member.destroy', $m->id) }}" method="POST"
+                                            style="display:inline;">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit"
+                                                class="-right-10 text-primary text-2xl px-2 py-2 border-2 border-slate-200 hover:border-2 rounded-full hover:border-primary bg-transparent"
+                                                title="Delete">
+                                                <i class="bi bi-trash3"></i>
+                                            </button>
+                                        </form>
                                     </td>
                                 </tr>
                             @endforeach

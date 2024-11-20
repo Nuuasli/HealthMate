@@ -82,6 +82,6 @@ class smallclassControler extends Controller
     public function destroy(string $id)
     {
         DB::table('kelass')->where('id', $id)->delete();
-        return redirect()->route('classes.index')->with('success', 'Data pelatih berhasil diedit.');
+        return redirect()->route('classes.index')->with('success', 'Data kelas berhasil dihapus.');
     }
 }

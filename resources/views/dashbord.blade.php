@@ -121,7 +121,7 @@
                                 <div
                                     class="absolute ml-2 bottom-[70px] w-[150px] border-2 border-primary rounded-sm
                                         bg-primary hover:bg-white focus:ring-1-primary">
-                                    <a href="#"
+                                    <a href="/smClass"
                                         class="flex px-6 py-2 justify-center text-white hover:text-primary ">IKUTI
                                         KELAS</a>
                                 </div>
@@ -167,7 +167,7 @@
 
                             <div
                                 class="button w-40 border-b-2 border-primary ml-5 mt-4 hover:border-2 hover:border-primary ">
-                                <a href="#"
+                                <a href="/contact"
                                     class="flex px-3 py-3 justify-center text-white hover:text-primary ">Hubungi
                                     Kami</a>
                             </div>
@@ -202,7 +202,7 @@
                                 canggih yang ramah hewan peliharaan dengan disediakan kamar mandi dan sauna untuk
                                 kebebasan
                                 anda latihan sendiri di waktu Anda sendiri.</p>
-                            <a href="" class="text-primary border-b-2 capitalize py-2 border-primary ">lihat
+                            <a href="/classes" class="text-primary border-b-2 capitalize py-2 border-primary ">lihat
                                 lebih
                                 lanjut</a>
                         </div>
@@ -214,7 +214,7 @@
                                 kebugaran dan kelompok kecil untuk fokus pada pengembangan dan penyempurnaan kekuatan
                                 dan
                                 daya tahan otot dan kardiovaskular.</p>
-                            <a href="" class="text-primary border-b-2 capitalize py-2 border-primary ">
+                            <a href="/smClass" class="text-primary border-b-2 capitalize py-2 border-primary ">
                                 jadwalkan kelas pertama anda</a>
                         </div>
                     </div>
@@ -270,8 +270,6 @@
                                         <li class="p-1">Full set Dumbbells</li>
                                         <li class="p-1">Barbells</li>
                                         <li class="p-1">Kettlebells</li>
-
-
                                     </ul>
                                 </div>
                                 <div class="w-1/2">
@@ -288,8 +286,6 @@
                                         <li class="p-1">Resistance Bands</li>
                                     </ul>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>

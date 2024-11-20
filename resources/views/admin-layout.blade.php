@@ -77,49 +77,114 @@
             </div>
         </nav>
     </header>
-        <!-- resources/views/components/sidebar.blade.php -->
-<div class="h-full w-64 bg-white border-r border-gray-200 flex flex-col">
-    <!-- Menu -->
-    <nav class="flex-1 px-4 py-6 space-y-4">
-        <h1 class="flex font-Rowdies text-3xl items-center px-4 py-2 text-primary rounded-lg">
-            <a href="{{ route('admin.index') }}"><span class="ml-3">Dashboard</span></a>
-        </h1>
-        <a href="{{ route('member.index') }}" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-lg">
-            <span class="text-xl"><i class="bi bi-people"></i></span>
-            <span class="ml-3 capitalize">member</span>
-        </a>
-        <a href="{{ route('pelatih.index') }}" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-lg">
-            <span  class="text-xl"><i class="bi bi-person-raised-hand"></i></span>
-            <span class="ml-3 capitalize">pelatih</span>
-        </a>
-        <a href="{{ route('classes.index') }}" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-lg">
-            <span  class="text-xl"><i class="bi bi-journals"></i></span>
-            <span class="ml-3 capitalize">kelas</span>
-        </a>
-        <a href="{{ route('pendaftaran.index') }}" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-lg">
-            <span class="text-xl"><i class="bi bi-people"></i></span>
-            <span class="ml-3 capitalize">pendaftaran</span>
-        </a>
-    </nav>
+    <!-- resources/views/components/sidebar.blade.php -->
+    {{-- <div class="h-auto">
+        <div class="h-full w-64 bg-white border-r border-gray-200 flex flex-col">
+            <!-- Menu -->
+            <nav class="flex-1 h-full px-4 py-6 space-y-4">
+                <h1 class="flex font-Rowdies text-3xl items-center px-4 py-2 text-primary rounded-lg">
+                    <a href="{{ route('admin.index') }}"><span class="ml-3">Dashboard</span></a>
+                </h1>
+                <a href="{{ route('member.index') }}"
+                    class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-lg">
+                    <span class="text-xl"><i class="bi bi-people"></i></span>
+                    <span class="ml-3 capitalize">member</span>
+                </a>
+                <a href="{{ route('pelatih.index') }}"
+                    class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-lg">
+                    <span class="text-xl"><i class="bi bi-person-raised-hand"></i></span>
+                    <span class="ml-3 capitalize">pelatih</span>
+                </a>
+                <a href="{{ route('classes.index') }}"
+                    class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-lg">
+                    <span class="text-xl"><i class="bi bi-journals"></i></span>
+                    <span class="ml-3 capitalize">kelas</span>
+                </a>
+                <a href="{{ route('pendaftaran.index') }}"
+                    class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-lg">
+                    <span class="text-xl"><i class="bi bi-calendar-check"></i></span>
+                    <span class="ml-3 capitalize">pendaftaran</span>
+                </a>
+            </nav>
 
-    <!-- Teams -->
-    <div class="px-4 py-6">
-        <h2 class="text-xl ml-6 font-Rowdies text-primary font-semibol uppercase tracking-wide">Opsi</h2>
-        <div class="mt-4 space-y-2">
-            <form action="{{ route('logout') }}" method="POST" style="display: inline;">
-                @csrf
-                <span  class="text-xl ml-4"><i class="bi bi-door-open"></i></span>
-                <button type="submit" class="btn btn-danger ml-2">Logout</button>
-            </form>
-            <a href="/register" class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg">
-                <span  class="text-xl"><i class="bi bi-person-plus"></i></span>
-                <span class="ml-3 capitalize">Register user</span>
-            </a>
+            <!-- Teams -->
+            <div class="px-4 py-6">
+                <h2 class="text-xl ml-6 font-Rowdies text-primary font-semibol uppercase tracking-wide">Opsi</h2>
+                <div class="mt-4 space-y-2">
+                    <form action="{{ route('logout') }}" method="POST" style="display: inline;">
+                        @csrf
+                        <span class="text-xl ml-4"><i class="bi bi-door-open"></i></span>
+                        <button type="submit" class="btn btn-danger ml-2">Logout</button>
+                    </form>
+                    <a href="/register"
+                        class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg">
+                        <span class="text-xl"><i class="bi bi-person-plus"></i></span>
+                        <span class="ml-3 capitalize">Register user</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        @yield('content')
+    </div> --}}
+    <div class="flex flex-1 main-wrapper">
+        <!-- Sidebar -->
+        <div class="h-full w-64 bg-white border-r border-gray-200 flex flex-col">
+            <div class="h-auto">
+                <div class="h-full w-64 bg-white border-r border-gray-200 flex flex-col">
+                    <!-- Menu -->
+                    <nav class="flex-1 h-full px-4 py-6 space-y-4">
+                        <h1 class="flex font-Rowdies text-3xl items-center px-4 py-2 text-primary rounded-lg">
+                            <a href="{{ route('admin.index') }}"><span class="ml-3">Dashboard</span></a>
+                        </h1>
+                        <a href="{{ route('member.index') }}"
+                            class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-lg">
+                            <span class="text-xl"><i class="bi bi-people"></i></span>
+                            <span class="ml-3 capitalize">member</span>
+                        </a>
+                        <a href="{{ route('pelatih.index') }}"
+                            class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-lg">
+                            <span class="text-xl"><i class="bi bi-person-raised-hand"></i></span>
+                            <span class="ml-3 capitalize">pelatih</span>
+                        </a>
+                        <a href="{{ route('classes.index') }}"
+                            class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-lg">
+                            <span class="text-xl"><i class="bi bi-journals"></i></span>
+                            <span class="ml-3 capitalize">kelas</span>
+                        </a>
+                        <a href="{{ route('pendaftaran.index') }}"
+                            class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-lg">
+                            <span class="text-xl"><i class="bi bi-calendar-check"></i></span>
+                            <span class="ml-3 capitalize">pendaftaran</span>
+                        </a>
+                    </nav>
+        
+                    <!-- Teams -->
+                    <div class="px-4 py-6">
+                        <h2 class="text-xl ml-6 font-Rowdies text-primary font-semibol uppercase tracking-wide">Opsi</h2>
+                        <div class="mt-4 space-y-2">
+                            <form action="{{ route('logout') }}" method="POST" style="display: inline;">
+                                @csrf
+                                <span class="text-xl ml-4"><i class="bi bi-door-open"></i></span>
+                                <button type="submit" class="btn btn-danger ml-2">Logout</button>
+                            </form>
+                            <a href="/register"
+                                class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg">
+                                <span class="text-xl"><i class="bi bi-person-plus"></i></span>
+                                <span class="ml-3 capitalize">Register user</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Konten Utama -->
+        <div class="flex-1 bg-gray-100">
+            @yield('content')
         </div>
     </div>
-</div>
 
-    @yield('content')
+
 
     <footer class="bg-black text-white py-10 px-6 w-full flex flex-col min-h-[500px]">
         <div class="container mx-auto flex flex-wrap justify-between mt-20">
@@ -162,7 +227,8 @@
                                     <path
                                         d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" />
                                 </svg></a>
-                            <a href="#" target="_blank" class="text-primary hover:text-white w-9 h-9 text-center">
+                            <a href="#" target="_blank"
+                                class="text-primary hover:text-white w-9 h-9 text-center">
                                 <svg role="img" class="fill-current" width="25" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <title>Instagram</title>
@@ -195,7 +261,8 @@
             <div class="mx-auto">
                 <p>Site design by <a href="https://tailwindcss.com/" target="_blank"
                         class="text-blue-400 hover:underline">Tailwindcss</a> |
-                    Built by <a href="https://laravel.com/" target="_blank" class="text-primary hover:underline">Laravel</a></p>
+                    Built by <a href="https://laravel.com/" target="_blank"
+                        class="text-primary hover:underline">Laravel</a></p>
             </div>
 
         </div>

@@ -58,7 +58,7 @@
                             <p class="capitalize font-light text-md py-4">Jumlah peserta dibatasi maksimal 10 orang per
                                 kelas, sehingga setiap klien mendapatkan pengalaman latihan yang lebih personal sambil
                                 tetap menikmati suasana menyenangkan bersama teman-teman baru.</p>
-                            <a href="" class="text-primary border-b-2 capitalize py-2 border-primary ">
+                            <a href="/membership" class="text-primary border-b-2 capitalize py-2 border-primary ">
                                 jadwalkan kelas pertama anda</a>
                         </div>
                     </div>
