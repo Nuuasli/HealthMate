@@ -74,6 +74,6 @@ class pelatihControler extends Controller
     public function destroy(string $id)
     {
         DB::table('pelatihs')->where('id', $id)->delete();
-        return redirect()->route('pelatih.index')->with('success', 'Data pelatih berhasil diedit.');
+        return redirect()->route('pelatih.index')->with('success', 'Data pelatih berhasil dihapus.');
     }
 }
